@@ -1,0 +1,187 @@
+import type { Metadata } from 'next'
+import Link from 'next/link'
+import { Phone, Mail, CheckCircle, ShieldCheck } from 'lucide-react'
+import FAQAccordion from '@/components/FAQAccordion'
+import ScrollReveal from '@/components/ScrollReveal'
+import ArcticCircleLine from '@/components/ArcticCircleLine'
+
+export const metadata: Metadata = {
+  title: 'Uavhengig kontroll av brann i Rana | Rana Brannkonsult',
+  description:
+    'Uavhengig kontroll (UK) av brannkonsept i Mo i Rana. Sentralt godkjent foretak. Vi gjennomgår brannkonsept, branntegninger og løsningsvalg mot TEK17. Fast pris.',
+  alternates: { canonical: 'https://www.ranabrannkonsult.no/uavhengig-kontroll' },
+}
+
+const faqItems = [
+  {
+    question: 'Hva er uavhengig kontroll av brann?',
+    answer:
+      'Uavhengig kontroll (UK) er en obligatorisk kvalitetssikring der en uavhengig part kontrollerer at brannprosjekteringen er utført i henhold til gjeldende forskrifter. Kontrollen utføres av et firma uten tilknytning til det som har prosjektert.',
+  },
+  {
+    question: 'Når er det krav om uavhengig kontroll av brann?',
+    answer:
+      'Det er krav om UK brann når prosjekteringen av brann utføres i tiltaksklasse 2 (TKL 2) eller høyere, i henhold til SAK10. Dette gjelder de fleste næringsbygg, industribygg, boligblokker og bygninger med mer enn 2 etasjer.',
+  },
+  {
+    question: 'Hva koster uavhengig kontroll?',
+    answer:
+      'Kostnaden avhenger av prosjektets omfang og kompleksitet. Vi gir fastpristilbud etter gjennomgang av brannkonseptet. Ta kontakt med oss for et uforpliktende estimat.',
+  },
+  {
+    question: 'Kan dere ta UK selv om dere ikke har prosjektert brannkonseptet?',
+    answer:
+      'Ja — det er faktisk et krav at den som utfører UK ikke er den samme som har prosjektert. Vi kan ta på oss uavhengig kontroll av brannkonsept utarbeidet av andre rådgivere.',
+  },
+]
+
+export default function UavhengigKontrollPage() {
+  return (
+    <>
+      <section className="bg-brand-dark py-16 lg:py-24">
+        <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="hero-1 flex items-center gap-2 text-brand-orange text-sm mb-4">
+            <Link href="/" className="hover:underline">Hjem</Link>
+            <span>/</span>
+            <span>Uavhengig kontroll</span>
+          </div>
+          <h1 className="hero-2 text-brand-white text-4xl lg:text-5xl font-black max-w-2xl">
+            Uavhengig kontroll av brannkonsept i Mo i Rana
+          </h1>
+          <p className="hero-3 text-brand-white/70 text-lg mt-4 max-w-xl leading-relaxed">
+            Krav om UK brann? Vi gjennomgår brannkonseptet og utfører uavhengig kontroll for byggesaker i Rana og på Helgeland.
+          </p>
+          <div className="hero-4 mt-6 max-w-xl">
+            <ArcticCircleLine dark />
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 lg:py-24 bg-brand-white">
+        <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col lg:flex-row gap-12">
+            <div className="lg:w-[68%]">
+              <ScrollReveal>
+                <p className="text-brand-darkgray text-lg leading-relaxed mb-8">
+                  I mange byggeprosjekter er det krav om uavhengig kontroll (UK) av brannsikkerheten. Kontrollen skal sikre at brannkonseptet er i tråd med gjeldende forskrifter og at prosjekteringen holder nødvendig kvalitet. Dette gir økt trygghet, reduserer risiko for feil og bidrar til en mer forutsigbar byggeprosess.
+                </p>
+              </ScrollReveal>
+
+              <ScrollReveal>
+                <h2 className="text-brand-black text-2xl font-black mb-4">Når er det krav om uavhengig kontroll?</h2>
+                <p className="text-brand-darkgray leading-relaxed mb-8">
+                  I henhold til SAK10 § 14-2 er det krav om uavhengig kontroll av prosjektering av brann når tiltaket er i tiltaksklasse 2 (TKL 2) eller høyere. Dette gjelder de fleste næringsbygg, industribygg, boligblokker og bygninger med særskilte krav til brannsikkerhet.
+                </p>
+              </ScrollReveal>
+
+              <ScrollReveal>
+                <h2 className="text-brand-black text-2xl font-black mb-4">Hva kontrolleres?</h2>
+                <ul className="space-y-3 mb-8">
+                  {[
+                    'Brannkonseptets overensstemmelse med TEK17 og Veiledning til TEK17',
+                    'Valg av risikoklasse og brannklasse',
+                    'Branncelleinndeling og seksjoneringer',
+                    'Rømningsveier og røykventilasjon',
+                    'Krav til branntekniske installasjoner',
+                    'Branntegningenes nøyaktighet og fullstendighet',
+                  ].map((item, i) => (
+                    <li key={i} className="flex items-start gap-3 text-brand-darkgray">
+                      <CheckCircle size={18} className="text-brand-orange shrink-0 mt-0.5" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </ScrollReveal>
+
+              <ScrollReveal>
+                <h2 className="text-brand-black text-2xl font-black mb-4">Hva vi tilbyr</h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+                  {[
+                    { icon: ShieldCheck, title: 'Uavhengig gjennomgang', desc: 'Grundig kontroll av hele brannkonseptet av en erfaren brannrådgiver.' },
+                    { icon: CheckCircle, title: 'Skriftlig kontrollrapport', desc: 'Detaljert rapport med funn, avvik og anbefalinger.' },
+                    { icon: ShieldCheck, title: 'Erklæring om ansvarsrett', desc: 'Vi erklærer ansvarsrett som uavhengig kontrollerende for brann.' },
+                    { icon: CheckCircle, title: 'Nøytral part', desc: 'Vi selger ingen produkter og har ingen interesser i valg av løsning.' },
+                  ].map((item, i) => (
+                    <div key={i} className="plate-corner bg-brand-lightgray p-5 flex items-start gap-3">
+                      <item.icon size={20} className="text-brand-orange shrink-0 mt-0.5" />
+                      <div>
+                        <h3 className="font-bold text-brand-black mb-1 text-sm">{item.title}</h3>
+                        <p className="text-brand-darkgray text-sm leading-relaxed">{item.desc}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </ScrollReveal>
+
+              <ScrollReveal>
+                <h2 className="text-brand-black text-2xl font-black mb-4">Nøytral part — vi selger ingen produkter</h2>
+                <p className="text-brand-darkgray leading-relaxed mb-8">
+                  Rana Brannkonsult tilbyr ingen produkter eller håndverkertjenester. Vi er en ren rådgivende part, noe som gir deg trygghet for at kontrollen er objektiv og faglig fundert.
+                </p>
+              </ScrollReveal>
+
+              <ScrollReveal>
+                <div className="plate-corner-lg border border-brand-gray p-8 bg-brand-lightgray">
+                  <h2 className="text-brand-black text-2xl font-black mb-6">Ofte stilte spørsmål</h2>
+                  <FAQAccordion items={faqItems} />
+                </div>
+              </ScrollReveal>
+            </div>
+
+            <div className="lg:w-[32%]">
+              <ScrollReveal delay={200}>
+                <div className="plate-corner border border-brand-gray p-6 bg-brand-dark">
+                  <h3 className="font-bold text-xl mb-3 text-brand-white">Trenger du UK brann?</h3>
+                  <p className="text-brand-white/60 text-sm mb-6 leading-relaxed">
+                    Ta kontakt for uforpliktende tilbud på uavhengig kontroll av brannkonsept i Rana.
+                  </p>
+                  <Link href="/kontakt-oss" className="block bg-brand-orange text-brand-white font-bold px-6 py-3.5 rounded-[10px] text-center hover:opacity-90 transition-opacity mb-6">
+                    Kontakt oss
+                  </Link>
+                  <div className="space-y-3 pt-4 border-t border-brand-white/10">
+                    <a href="tel:+4700000000" className="flex items-center gap-2 text-brand-white/60 hover:text-brand-orange transition-colors text-sm">
+                      <Phone size={14} /> +47 000 00 000
+                    </a>
+                    <a href="mailto:post@ranabrannkonsult.no" className="flex items-center gap-2 text-brand-white/60 hover:text-brand-orange transition-colors text-sm">
+                      <Mail size={14} /> post@ranabrannkonsult.no
+                    </a>
+                  </div>
+                </div>
+                <div className="mt-6 plate-corner border border-brand-gray p-6 bg-brand-lightgray">
+                  <h3 className="font-bold text-brand-black text-lg mb-4">Andre tjenester</h3>
+                  <ul className="space-y-3">
+                    {[
+                      { href: '/brannkonsept', label: 'Brannkonsept' },
+                      { href: '/brannprosjektering', label: 'Brannprosjektering' },
+                      { href: '/branntilsyn', label: 'Branntilsyn' },
+                    ].map((link) => (
+                      <li key={link.href}>
+                        <Link href={link.href} className="text-brand-darkgray hover:text-brand-orange transition-colors text-sm font-medium">→ {link.label}</Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </ScrollReveal>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <ScrollReveal variant="fade">
+        <section className="bg-brand-dark py-14">
+          <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div className="mb-8 max-w-xl mx-auto">
+              <ArcticCircleLine dark />
+            </div>
+            <h2 className="text-brand-white text-2xl lg:text-3xl font-black mb-6">
+              Kontakt oss for uavhengig kontroll i Rana
+            </h2>
+            <Link href="/kontakt-oss" className="inline-block bg-brand-orange text-brand-white font-bold px-8 py-3.5 rounded-[10px] hover:opacity-90 transition-opacity">
+              Kontakt oss
+            </Link>
+          </div>
+        </section>
+      </ScrollReveal>
+    </>
+  )
+}
