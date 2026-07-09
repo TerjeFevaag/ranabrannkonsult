@@ -14,7 +14,7 @@ export default function ArcticCircleLine({ className = '', dark = false }: Props
             : 'text-brand-darkgray border-brand-gray'
         }`}
       >
-        66°33&apos;N — Polarsirkelen
+        Polarsirkelen
       </span>
       <div className={`flex-1 h-0 polar-line ${dark ? 'opacity-70' : ''}`} />
     </div>

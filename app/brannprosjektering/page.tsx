@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { Phone, Mail, CheckCircle } from 'lucide-react'
 import FAQAccordion from '@/components/FAQAccordion'
@@ -73,6 +74,16 @@ export default function BrannprosjekteringPage() {
               </ScrollReveal>
 
               <ScrollReveal>
+                <div className="relative h-64 lg:h-80 plate-corner-lg overflow-hidden mb-8">
+                  <Image
+                    src="/images/service-brannprosjektering.jpg"
+                    alt="Brannrådgiver i arbeid med brannprosjektering"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 1024px) 100vw, 700px"
+                  />
+                </div>
+
                 <h2 className="text-brand-black text-2xl font-black mb-4">Når er det behov for brannprosjektering?</h2>
                 <ul className="space-y-3 mb-8">
                   {[

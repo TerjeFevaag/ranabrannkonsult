@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { Phone, Mail, AlertTriangle } from 'lucide-react'
 import FAQAccordion from '@/components/FAQAccordion'
@@ -73,6 +74,16 @@ export default function BranntilsynPage() {
               </ScrollReveal>
 
               <ScrollReveal>
+                <div className="relative h-64 lg:h-80 plate-corner-lg overflow-hidden mb-8">
+                  <Image
+                    src="/images/service-branntilsyn.jpg"
+                    alt="Branntilsyn og inspeksjon av brannslukningsutstyr"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 1024px) 100vw, 700px"
+                  />
+                </div>
+
                 <h2 className="text-brand-black text-2xl font-black mb-4">Krav til oppgradering</h2>
                 <p className="text-brand-darkgray leading-relaxed mb-8">
                   Alle bygninger i Norge skal tilfredsstille et minimum brannsikkerhetsnivå tilsvarende det som gjaldt for nybygg i 1985 (BF85). Eldre bygg som ikke oppfyller dette kravet skal utbedres. Rana har en variert bygningsmasse med eldre industribebyggelse og trehus som kan ha behov for branntekniske tiltak.

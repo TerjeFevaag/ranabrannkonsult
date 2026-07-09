@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { FileText, Phone, Mail, CheckCircle } from 'lucide-react'
 import FAQAccordion from '@/components/FAQAccordion'
@@ -78,6 +79,18 @@ export default function BrannkonseptPage() {
                 <p className="text-brand-darkgray text-lg leading-relaxed mb-8">
                   Et brannkonsept er en skriftlig rapport som oppsummerer bygningens brannsikkerhetsnivå. Ved byggesaker krever kommunen som regel prosjekteringsdokumentasjon på brannkonseptnivå — en helhetlig overordnet plan som ivaretar brannsikkerheten både for det omsøkte tiltaket og den øvrige bygningsmassen. Vi hjelper private, arkitekter, industribedrifter og utbyggere i Rana og omegn med å utarbeide komplette brannkonsept til fast pris.
                 </p>
+              </ScrollReveal>
+
+              <ScrollReveal variant="scale" className="mb-8">
+                <div className="relative h-64 lg:h-80 plate-corner-lg overflow-hidden">
+                  <Image
+                    src="/images/service-brannkonsept.jpg"
+                    alt="Brannkonsept og branntegninger under utarbeidelse"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 1024px) 100vw, 700px"
+                  />
+                </div>
               </ScrollReveal>
 
               <ScrollReveal>

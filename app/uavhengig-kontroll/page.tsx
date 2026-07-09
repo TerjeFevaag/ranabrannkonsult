@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { Phone, Mail, CheckCircle, ShieldCheck } from 'lucide-react'
 import FAQAccordion from '@/components/FAQAccordion'
@@ -68,6 +69,16 @@ export default function UavhengigKontrollPage() {
               </ScrollReveal>
 
               <ScrollReveal>
+                <div className="relative h-64 lg:h-80 plate-corner-lg overflow-hidden mb-8">
+                  <Image
+                    src="/images/service-uavhengig-kontroll.jpg"
+                    alt="Uavhengig kontroll av brannkonsept på byggeplass"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 1024px) 100vw, 700px"
+                  />
+                </div>
+
                 <h2 className="text-brand-black text-2xl font-black mb-4">Når er det krav om uavhengig kontroll?</h2>
                 <p className="text-brand-darkgray leading-relaxed mb-8">
                   I henhold til SAK10 § 14-2 er det krav om uavhengig kontroll av prosjektering av brann når tiltaket er i tiltaksklasse 2 (TKL 2) eller høyere. Dette gjelder de fleste næringsbygg, industribygg, boligblokker og bygninger med særskilte krav til brannsikkerhet.

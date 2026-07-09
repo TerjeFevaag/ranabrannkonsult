@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Lato, Dancing_Script } from 'next/font/google'
+import { Lato } from 'next/font/google'
 import './globals.css'
 import TopBar from '@/components/TopBar'
 import Navbar from '@/components/Navbar'
@@ -9,13 +9,6 @@ const lato = Lato({
   subsets: ['latin'],
   weight: ['300', '400', '700', '900'],
   variable: '--font-lato',
-  display: 'swap',
-})
-
-const dancing = Dancing_Script({
-  subsets: ['latin'],
-  weight: ['400', '700'],
-  variable: '--font-dancing',
   display: 'swap',
 })
 
@@ -69,7 +62,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="no" className={`${lato.variable} ${dancing.variable}`}>
+    <html lang="no" className={lato.variable}>
       <head>
         <script
           type="application/ld+json"

@@ -134,8 +134,8 @@ export default function HomePage() {
       {/* ── HERO ── */}
       <section className="relative min-h-screen lg:min-h-[90vh] bg-brand-dark flex flex-col lg:flex-row">
         <div className="relative z-10 flex flex-col justify-center w-full lg:w-[55%] px-4 sm:px-6 lg:pl-12 xl:pl-20 py-24 lg:py-0">
-          <p className="hero-1 uppercase font-accent text-brand-orange text-xl lg:text-2xl mb-4 tracking-wide">
-            Rana · Helgeland · 66°33&apos;N
+          <p className="hero-1 uppercase font-bold text-brand-orange text-sm lg:text-base mb-4 tracking-[0.2em]">
+            Rana · Helgeland
           </p>
           <h1 className="hero-2 text-brand-white text-4xl lg:text-5xl xl:text-6xl font-black leading-tight mb-6 max-w-xl">
             Brannprosjektering med industriell presisjon i Mo i Rana
@@ -180,7 +180,7 @@ export default function HomePage() {
       <section className="py-16 lg:py-24 bg-brand-lightgray">
         <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal className="text-center mb-12">
-            <p className="font-accent text-brand-orange text-xl mb-2">Våre tjenester</p>
+            <p className="uppercase font-bold text-brand-orange text-sm tracking-[0.2em] mb-2">Våre tjenester</p>
             <h2 className="text-brand-black text-3xl lg:text-4xl font-black">
               Hva kan vi hjelpe deg med?
             </h2>
@@ -225,7 +225,7 @@ export default function HomePage() {
       <section className="py-16 lg:py-24 bg-brand-white">
         <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal className="text-center mb-12">
-            <p className="font-accent text-brand-orange text-xl mb-2">Kundene våre sier</p>
+            <p className="uppercase font-bold text-brand-orange text-sm tracking-[0.2em] mb-2">Kundene våre sier</p>
             <h2 className="text-brand-black text-3xl lg:text-4xl font-black">Hva sier kundene?</h2>
           </ScrollReveal>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
