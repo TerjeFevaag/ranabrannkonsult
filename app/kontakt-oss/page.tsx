@@ -76,7 +76,7 @@ export default function KontaktOssPage() {
                   ))}
                 </div>
                 <p className="text-brand-darkgray text-xs leading-relaxed mt-6 pt-5 border-t border-brand-gray">
-                  Posten går til vårt datterselskap Tromsø Brannkonsult AS — vi jobber lokalt i Mo i Rana og på Helgeland, med satsing i hele Nord-Norge.
+                  Posten går til Tromsø Brannkonsult AS — vi jobber lokalt i Mo i Rana og på Helgeland, med satsing i hele Nord-Norge.
                 </p>
               </div>
 
