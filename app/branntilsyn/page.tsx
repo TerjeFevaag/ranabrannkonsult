@@ -7,7 +7,7 @@ import ScrollReveal from '@/components/ScrollReveal'
 import ArcticCircleLine from '@/components/ArcticCircleLine'
 
 export const metadata: Metadata = {
-  title: 'Branntilsyn og branninspeksjon i Rana | Rana Brannkonsult',
+  title: 'Branntilsyn og branninspeksjon i Rana | Brannkonsult AS',
   description:
     'Branntilsyn og branninspeksjon i Mo i Rana. Fått pålegg fra brannvesenet? Vi inspiserer bygningen og utarbeider tilstandsrapport og handlingsplan. Kontakt oss i dag.',
   alternates: { canonical: 'https://www.ranabrannkonsult.no/branntilsyn' },

@@ -6,9 +6,9 @@ import ScrollReveal from '@/components/ScrollReveal'
 import ArcticCircleLine from '@/components/ArcticCircleLine'
 
 export const metadata: Metadata = {
-  title: 'Om Rana Brannkonsult | Sentralt godkjent brannrådgiver',
+  title: 'Om Brannkonsult AS | Sentralt godkjent brannrådgiver',
   description:
-    'Rana Brannkonsult er et sentralt godkjent brannrådgiverfirma med over 1200 prosjekter siden 2013. Vi tilbyr brannkonsept, brannprosjektering og branntilsyn i Mo i Rana og på Helgeland.',
+    'Brannkonsult AS er et sentralt godkjent brannrådgiverfirma med over 1200 prosjekter siden 2013. Vi tilbyr brannkonsept, brannprosjektering og branntilsyn i Mo i Rana og på Helgeland.',
   alternates: { canonical: 'https://www.ranabrannkonsult.no/om-oss' },
 }
 
@@ -32,7 +32,7 @@ export default function OmOssPage() {
             <span>Om oss</span>
           </div>
           <h1 className="hero-2 text-brand-white text-4xl lg:text-5xl font-black max-w-2xl">
-            Om Rana Brannkonsult
+            Om Brannkonsult AS
           </h1>
           <p className="hero-3 text-brand-white/70 text-lg mt-4 max-w-xl leading-relaxed">
             Sentralt godkjent brannrådgiverfirma med over 1200 prosjekter siden 2013.
@@ -78,7 +78,7 @@ export default function OmOssPage() {
               <div className="relative plate-corner-lg overflow-hidden h-80 lg:h-96">
                 <Image
                   src="/images/om-oss.jpg"
-                  alt="Rana Brannkonsult team"
+                  alt="Brannkonsult AS team"
                   fill
                   className="object-cover object-top"
                   sizes="(max-width: 1024px) 100vw, 50vw"
@@ -132,7 +132,7 @@ export default function OmOssPage() {
           <ScrollReveal className="max-w-3xl">
             <h2 className="text-brand-black text-3xl font-black mb-5">Nøytral rådgiver</h2>
             <p className="text-brand-darkgray leading-relaxed mb-4">
-              Rana Brannkonsult selger ingen produkter og tilbyr ingen håndverkertjenester. Vi er utelukkende en rådgivende part — det sikrer at rådet vi gir alltid er i ditt beste interesse, og ikke påvirket av salgsinteresser.
+              Brannkonsult AS selger ingen produkter og tilbyr ingen håndverkertjenester. Vi er utelukkende en rådgivende part — det sikrer at rådet vi gir alltid er i ditt beste interesse, og ikke påvirket av salgsinteresser.
             </p>
             <p className="text-brand-darkgray leading-relaxed">
               Mange av kundene våre er arkitekter, entreprenører og industribedrifter som setter pris på at vi er lett tilgjengelige og raskt kan svare på spørsmål underveis i prosjektet — uten ekstra kostnad.

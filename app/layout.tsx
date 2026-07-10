@@ -14,18 +14,18 @@ const lato = Lato({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.ranabrannkonsult.no'),
-  title: 'Brannprosjektering i Rana | Rana Brannkonsult',
+  title: 'Brannprosjektering i Rana | Brannkonsult AS',
   description:
-    'Rana Brannkonsult tilbyr brannkonsept, brannprosjektering og branntilsyn i Mo i Rana og på Helgeland. Sentralt godkjent foretak. Få uforpliktende tilbud i dag.',
+    'Brannkonsult AS tilbyr brannkonsept, brannprosjektering og branntilsyn i Mo i Rana og på Helgeland. Sentralt godkjent foretak. Få uforpliktende tilbud i dag.',
   alternates: {
     canonical: 'https://www.ranabrannkonsult.no',
   },
   openGraph: {
-    title: 'Brannprosjektering i Rana | Rana Brannkonsult',
+    title: 'Brannprosjektering i Rana | Brannkonsult AS',
     description:
-      'Rana Brannkonsult tilbyr brannkonsept, brannprosjektering og branntilsyn i Mo i Rana og på Helgeland.',
+      'Brannkonsult AS tilbyr brannkonsept, brannprosjektering og branntilsyn i Mo i Rana og på Helgeland.',
     url: 'https://www.ranabrannkonsult.no',
-    siteName: 'Rana Brannkonsult',
+    siteName: 'Brannkonsult AS',
     locale: 'nb_NO',
     type: 'website',
     images: [
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
         url: '/images/hero.jpg',
         width: 1200,
         height: 630,
-        alt: 'Rana Brannkonsult',
+        alt: 'Brannkonsult AS',
       },
     ],
   },
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
-  name: 'Rana Brannkonsult AS',
+  name: 'Brannkonsult AS',
   description: 'Brannprosjektering og brannkonsept i Rana',
   telephone: '+47 400 51 437',
   email: 'post@ranabrannkonsult.no',

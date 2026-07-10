@@ -7,7 +7,7 @@ import ScrollReveal from '@/components/ScrollReveal'
 import ArcticCircleLine from '@/components/ArcticCircleLine'
 
 export const metadata: Metadata = {
-  title: 'Brannprosjektering i Rana | Rana Brannkonsult',
+  title: 'Brannprosjektering i Rana | Brannkonsult AS',
   description:
     'Profesjonell brannprosjektering i Mo i Rana og på Helgeland. Sentralt godkjent TKL 1+2. Fast pris fra ca. 15 000 kr. Tilbygg, bruksendring, nybygg.',
   alternates: { canonical: 'https://www.ranabrannkonsult.no/brannprosjektering' },

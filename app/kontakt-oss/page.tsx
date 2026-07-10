@@ -6,9 +6,9 @@ import ScrollReveal from '@/components/ScrollReveal'
 import ArcticCircleLine from '@/components/ArcticCircleLine'
 
 export const metadata: Metadata = {
-  title: 'Kontakt Rana Brannkonsult | Få uforpliktende tilbud',
+  title: 'Kontakt Brannkonsult AS | Få uforpliktende tilbud',
   description:
-    'Kontakt Rana Brannkonsult for uforpliktende tilbud på brannkonsept og brannprosjektering i Mo i Rana. Vi svarer innen 24 timer. Ring +47 400 51 437.',
+    'Kontakt Brannkonsult AS for uforpliktende tilbud på brannkonsept og brannprosjektering i Mo i Rana. Vi svarer innen 24 timer. Ring +47 400 51 437.',
   alternates: { canonical: 'https://www.ranabrannkonsult.no/kontakt-oss' },
 }
 
@@ -23,7 +23,7 @@ export default function KontaktOssPage() {
             <span>Kontakt oss</span>
           </div>
           <h1 className="hero-2 text-brand-white text-4xl lg:text-5xl font-black max-w-2xl">
-            Kontakt Rana Brannkonsult
+            Kontakt Brannkonsult AS
           </h1>
           <p className="hero-3 text-brand-white/70 text-lg mt-4 max-w-xl leading-relaxed">
             Ta kontakt for et uforpliktende tilbud. Vi svarer innen 24 timer.

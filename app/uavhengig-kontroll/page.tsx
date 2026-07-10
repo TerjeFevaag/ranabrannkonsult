@@ -7,7 +7,7 @@ import ScrollReveal from '@/components/ScrollReveal'
 import ArcticCircleLine from '@/components/ArcticCircleLine'
 
 export const metadata: Metadata = {
-  title: 'Uavhengig kontroll av brann i Rana | Rana Brannkonsult',
+  title: 'Uavhengig kontroll av brann i Rana | Brannkonsult AS',
   description:
     'Uavhengig kontroll (UK) av brannkonsept i Mo i Rana. Sentralt godkjent foretak. Vi gjennomgår brannkonsept, branntegninger og løsningsvalg mot TEK17. Fast pris.',
   alternates: { canonical: 'https://www.ranabrannkonsult.no/uavhengig-kontroll' },
@@ -127,7 +127,7 @@ export default function UavhengigKontrollPage() {
               <ScrollReveal>
                 <h2 className="text-brand-black text-2xl font-black mb-4">Nøytral part — vi selger ingen produkter</h2>
                 <p className="text-brand-darkgray leading-relaxed mb-8">
-                  Rana Brannkonsult tilbyr ingen produkter eller håndverkertjenester. Vi er en ren rådgivende part, noe som gir deg trygghet for at kontrollen er objektiv og faglig fundert.
+                  Brannkonsult AS tilbyr ingen produkter eller håndverkertjenester. Vi er en ren rådgivende part, noe som gir deg trygghet for at kontrollen er objektiv og faglig fundert.
                 </p>
               </ScrollReveal>
 
