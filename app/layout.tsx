@@ -44,7 +44,7 @@ const jsonLd = {
   '@type': 'LocalBusiness',
   name: 'Rana Brannkonsult AS',
   description: 'Brannprosjektering og brannkonsept i Rana',
-  telephone: '+47 000 00 000',
+  telephone: '+47 400 51 437',
   email: 'post@ranabrannkonsult.no',
   address: {
     '@type': 'PostalAddress',
