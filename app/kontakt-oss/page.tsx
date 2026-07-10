@@ -51,7 +51,7 @@ export default function KontaktOssPage() {
                   {[
                     { icon: Phone, label: 'Telefon', value: '+47 400 51 437', href: 'tel:+4740051437' },
                     { icon: Mail, label: 'E-post', value: 'post@ranabrannkonsult.no', href: 'mailto:post@ranabrannkonsult.no' },
-                    { icon: MapPin, label: 'Adresse', value: '[Gateadresse], Mo i Rana', href: null },
+                    { icon: MapPin, label: 'Postadresse', value: ['Tromsø Brannkonsult AS', 'Grønnegate 78/88', '9008 Tromsø'], href: null },
                     { icon: Clock, label: 'Åpningstider', value: 'Man–Fre 08:00–16:00', href: null },
                   ].map(({ icon: Icon, label, value, href }, i) => (
                     <div key={i} className="flex items-start gap-4">
@@ -64,6 +64,10 @@ export default function KontaktOssPage() {
                           <a href={href} className="font-bold text-brand-black hover:text-brand-orange transition-colors text-sm">
                             {value}
                           </a>
+                        ) : Array.isArray(value) ? (
+                          value.map((line) => (
+                            <p key={line} className="font-bold text-brand-black text-sm leading-snug">{line}</p>
+                          ))
                         ) : (
                           <p className="font-bold text-brand-black text-sm">{value}</p>
                         )}
@@ -71,6 +75,9 @@ export default function KontaktOssPage() {
                     </div>
                   ))}
                 </div>
+                <p className="text-brand-darkgray text-xs leading-relaxed mt-6 pt-5 border-t border-brand-gray">
+                  Posten går til vårt datterselskap Tromsø Brannkonsult AS — vi jobber lokalt i Mo i Rana og på Helgeland, med satsing i hele Nord-Norge.
+                </p>
               </div>
 
               <div className="bg-brand-gray plate-corner h-52 flex items-center justify-center">
