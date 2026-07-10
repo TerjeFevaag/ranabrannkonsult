@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: 'Branntilsyn og branninspeksjon i Rana | Brannkonsult AS',
   description:
     'Branntilsyn og branninspeksjon i Mo i Rana. Fått pålegg fra brannvesenet? Vi inspiserer bygningen og utarbeider tilstandsrapport og handlingsplan. Kontakt oss i dag.',
-  alternates: { canonical: 'https://www.ranabrannkonsult.no/branntilsyn' },
+  alternates: { canonical: 'https://www.ranabrannkonsult.no/branninspeksjon' },
 }
 
 const faqItems = [
@@ -41,7 +41,7 @@ const faqItems = [
   },
 ]
 
-export default function BranntilsynPage() {
+export default function BranninspeksjonPage() {
   return (
     <>
       <section className="bg-brand-dark py-16 lg:py-24">
@@ -49,7 +49,7 @@ export default function BranntilsynPage() {
           <div className="hero-1 flex items-center gap-2 text-brand-orange text-sm mb-4">
             <Link href="/" className="hover:underline">Hjem</Link>
             <span>/</span>
-            <span>Branntilsyn</span>
+            <span>Branninspeksjon</span>
           </div>
           <h1 className="hero-2 text-brand-white text-4xl lg:text-5xl font-black max-w-2xl">
             Branntilsyn og branninspeksjon i Mo i Rana
