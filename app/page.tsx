@@ -59,21 +59,6 @@ const reviews = [
       'Lett å få kontakt med firmaet på ulike spørsmål som dukker opp underveis. Jeg har kun hatt gode opplevelser, selv om ikke alt var helt klart for meg som ufaglært.',
     author: 'Kirsti Andresen',
   },
-  {
-    quote:
-      'Rask og god kommunikasjon. Leverte raskt det vi trengte av dokumentasjon til en fornuftig pris. Ble ikke tilbudt en dyr dokumentasjonspakke som var overdimensjonert i henhold til vårt prosjekt. Veldig fornøyd!',
-    author: 'Heidi Spinnangr',
-  },
-  {
-    quote:
-      'Ga rask tilbakemelding ved første kontakt. Leverte til avtalt tid og pris. Høy kvalitet på arbeidet. Veldig behjelpelig med å svare på andre spørsmål i ettertid, vederlagsfritt.',
-    author: 'Jonathan Steinsvik',
-  },
-  {
-    quote:
-      'Svært god service. Trygt med folk som kan faget sitt. Fikk svært god hjelp og mange gode tips og innspill under byggeprosessen.',
-    author: 'Torger Vistnes',
-  },
 ]
 
 const faqItems = [
