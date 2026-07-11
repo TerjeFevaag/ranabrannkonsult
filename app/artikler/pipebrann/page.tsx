@@ -2,23 +2,38 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import ScrollReveal from '@/components/ScrollReveal'
+import JsonLd from '@/components/JsonLd'
+import { breadcrumbJsonLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Forebygg pipebrann med enkle grep | Brannkonsult AS',
   description:
     'Lær hvordan du forebygger pipebrann. Regelmessig feieservice, riktig ved og god trekk er nøkkelen. Råd fra sentralt godkjente brannrådgivere i Rana.',
   alternates: { canonical: 'https://www.ranabrannkonsult.no/artikler/pipebrann' },
+  openGraph: {
+    title: 'Forebygg pipebrann med enkle grep | Brannkonsult AS',
+    description: 'Hva forårsaker pipebrann, og hvordan reduserer du risikoen? Råd fra sentralt godkjente brannrådgivere.',
+    url: 'https://www.ranabrannkonsult.no/artikler/pipebrann',
+    images: [{ url: '/images/article-pipebrann.jpg', width: 1200, height: 630, alt: 'Forebygg pipebrann' }],
+  },
 }
+
+const breadcrumb = [
+  { name: 'Hjem', path: '/' },
+  { name: 'Artikler', path: '/artikler' },
+  { name: 'Forebygg pipebrann', path: '/artikler/pipebrann' },
+]
 
 export default function PipebrannPage() {
   return (
     <>
+      <JsonLd data={breadcrumbJsonLd(breadcrumb)} />
       <section className="bg-brand-dark py-12 lg:py-16">
         <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="hero-1 flex items-center gap-2 text-brand-orange text-sm mb-4">
             <Link href="/" className="hover:underline">Hjem</Link>
             <span>/</span>
-            <Link href="/" className="hover:underline">Artikler</Link>
+            <Link href="/artikler" className="hover:underline">Artikler</Link>
             <span>/</span>
             <span>Forebygg pipebrann</span>
           </div>

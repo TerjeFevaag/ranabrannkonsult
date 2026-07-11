@@ -4,17 +4,30 @@ import { Phone, Mail, MapPin, Clock } from 'lucide-react'
 import ContactForm from '@/components/ContactForm'
 import ScrollReveal from '@/components/ScrollReveal'
 import ArcticCircleLine from '@/components/ArcticCircleLine'
+import JsonLd from '@/components/JsonLd'
+import { breadcrumbJsonLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Kontakt Brannkonsult AS | Få uforpliktende tilbud',
   description:
     'Kontakt Brannkonsult AS for uforpliktende tilbud på brannkonsept og brannprosjektering i Mo i Rana. Vi svarer innen 24 timer. Ring +47 400 51 437.',
   alternates: { canonical: 'https://www.ranabrannkonsult.no/kontakt-oss' },
+  openGraph: {
+    title: 'Kontakt Brannkonsult AS | Få uforpliktende tilbud',
+    description: 'Kontakt oss for uforpliktende tilbud. Vi svarer innen 24 timer.',
+    url: 'https://www.ranabrannkonsult.no/kontakt-oss',
+  },
 }
+
+const breadcrumb = [
+  { name: 'Hjem', path: '/' },
+  { name: 'Kontakt oss', path: '/kontakt-oss' },
+]
 
 export default function KontaktOssPage() {
   return (
     <>
+      <JsonLd data={breadcrumbJsonLd(breadcrumb)} />
       <section className="bg-brand-dark py-16 lg:py-24">
         <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="hero-1 flex items-center gap-2 text-brand-orange text-sm mb-4">

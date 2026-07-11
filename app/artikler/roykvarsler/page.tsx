@@ -2,23 +2,38 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import ScrollReveal from '@/components/ScrollReveal'
+import JsonLd from '@/components/JsonLd'
+import { breadcrumbJsonLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Riktig røykvarsler redder liv | Brannkonsult AS',
   description:
     'Krav til røykvarslere i norske boliger, forskjell mellom ionisasjon og optisk varsler, og anbefalt plassering. Råd fra sentralt godkjente brannrådgivere i Rana.',
   alternates: { canonical: 'https://www.ranabrannkonsult.no/artikler/roykvarsler' },
+  openGraph: {
+    title: 'Riktig røykvarsler redder liv | Brannkonsult AS',
+    description: 'Krav til røykvarslere i norske boliger, og anbefalt plassering.',
+    url: 'https://www.ranabrannkonsult.no/artikler/roykvarsler',
+    images: [{ url: '/images/article-roykvarsler.jpg', width: 1200, height: 630, alt: 'Røykvarsler' }],
+  },
 }
+
+const breadcrumb = [
+  { name: 'Hjem', path: '/' },
+  { name: 'Artikler', path: '/artikler' },
+  { name: 'Riktig røykvarsler', path: '/artikler/roykvarsler' },
+]
 
 export default function RoykVarslerPage() {
   return (
     <>
+      <JsonLd data={breadcrumbJsonLd(breadcrumb)} />
       <section className="bg-brand-dark py-12 lg:py-16">
         <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="hero-1 flex items-center gap-2 text-brand-orange text-sm mb-4">
             <Link href="/" className="hover:underline">Hjem</Link>
             <span>/</span>
-            <Link href="/" className="hover:underline">Artikler</Link>
+            <Link href="/artikler" className="hover:underline">Artikler</Link>
             <span>/</span>
             <span>Riktig røykvarsler</span>
           </div>

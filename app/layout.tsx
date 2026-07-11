@@ -41,19 +41,37 @@ export const metadata: Metadata = {
 
 const jsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
-  name: 'Brannkonsult AS',
-  description: 'Brannprosjektering og brannkonsept i Rana',
-  telephone: '+47 400 51 437',
-  email: 'post@ranabrannkonsult.no',
-  address: {
-    '@type': 'PostalAddress',
-    addressLocality: 'Mo i Rana',
-    addressCountry: 'NO',
-  },
-  url: 'https://www.ranabrannkonsult.no',
-  priceRange: 'Fra kr 15 000',
-  hasCredential: 'Sentralt godkjent tiltaksklasse 1 og 2',
+  '@graph': [
+    {
+      '@type': ['LocalBusiness', 'ProfessionalService'],
+      '@id': 'https://www.ranabrannkonsult.no/#business',
+      name: 'Brannkonsult AS',
+      description: 'Brannprosjektering og brannkonsept i Rana',
+      telephone: '+47 400 51 437',
+      email: 'post@ranabrannkonsult.no',
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Mo i Rana',
+        addressCountry: 'NO',
+      },
+      areaServed: [
+        { '@type': 'City', name: 'Mo i Rana' },
+        { '@type': 'AdministrativeArea', name: 'Helgeland' },
+        { '@type': 'AdministrativeArea', name: 'Nordland' },
+      ],
+      url: 'https://www.ranabrannkonsult.no',
+      priceRange: 'Fra kr 15 000',
+      hasCredential: 'Sentralt godkjent tiltaksklasse 1 og 2',
+    },
+    {
+      '@type': 'WebSite',
+      '@id': 'https://www.ranabrannkonsult.no/#website',
+      url: 'https://www.ranabrannkonsult.no',
+      name: 'Brannkonsult AS',
+      inLanguage: 'nb-NO',
+      publisher: { '@id': 'https://www.ranabrannkonsult.no/#business' },
+    },
+  ],
 }
 
 export default function RootLayout({

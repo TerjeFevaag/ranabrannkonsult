@@ -5,12 +5,20 @@ import { Phone, Mail, AlertTriangle } from 'lucide-react'
 import FAQAccordion from '@/components/FAQAccordion'
 import ScrollReveal from '@/components/ScrollReveal'
 import ArcticCircleLine from '@/components/ArcticCircleLine'
+import JsonLd from '@/components/JsonLd'
+import { faqJsonLd, breadcrumbJsonLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Branntilsyn og branninspeksjon i Rana | Brannkonsult AS',
   description:
     'Branntilsyn og branninspeksjon i Mo i Rana. Fått pålegg fra brannvesenet? Vi inspiserer bygningen og utarbeider tilstandsrapport og handlingsplan. Kontakt oss i dag.',
   alternates: { canonical: 'https://www.ranabrannkonsult.no/branninspeksjon' },
+  openGraph: {
+    title: 'Branntilsyn og branninspeksjon i Rana | Brannkonsult AS',
+    description:
+      'Fått pålegg fra brannvesenet? Vi inspiserer bygningen og utarbeider tilstandsrapport og handlingsplan.',
+    url: 'https://www.ranabrannkonsult.no/branninspeksjon',
+  },
 }
 
 const faqItems = [
@@ -41,9 +49,16 @@ const faqItems = [
   },
 ]
 
+const breadcrumb = [
+  { name: 'Hjem', path: '/' },
+  { name: 'Branninspeksjon', path: '/branninspeksjon' },
+]
+
 export default function BranninspeksjonPage() {
   return (
     <>
+      <JsonLd data={faqJsonLd(faqItems)} />
+      <JsonLd data={breadcrumbJsonLd(breadcrumb)} />
       <section className="bg-brand-dark py-16 lg:py-24">
         <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="hero-1 flex items-center gap-2 text-brand-orange text-sm mb-4">

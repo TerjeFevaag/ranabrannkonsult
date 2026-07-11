@@ -5,12 +5,20 @@ import { FileText, Phone, Mail, CheckCircle } from 'lucide-react'
 import FAQAccordion from '@/components/FAQAccordion'
 import ScrollReveal from '@/components/ScrollReveal'
 import ArcticCircleLine from '@/components/ArcticCircleLine'
+import JsonLd from '@/components/JsonLd'
+import { faqJsonLd, breadcrumbJsonLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Brannkonsept i Rana | Brannkonsult AS',
   description:
     'Brannkonsult AS utarbeider brannkonsept i Mo i Rana og på Helgeland. Sentralt godkjent TKL 1+2. Fra ca. 15 000 kr inkl. branntegninger. Fastpris alltid.',
   alternates: { canonical: 'https://www.ranabrannkonsult.no/brannkonsept' },
+  openGraph: {
+    title: 'Brannkonsept i Rana | Brannkonsult AS',
+    description:
+      'Brannkonsult AS utarbeider brannkonsept i Mo i Rana og på Helgeland. Sentralt godkjent TKL 1+2. Fastpris alltid.',
+    url: 'https://www.ranabrannkonsult.no/brannkonsept',
+  },
 }
 
 const faqItems = [
@@ -46,9 +54,16 @@ const faqItems = [
   },
 ]
 
+const breadcrumb = [
+  { name: 'Hjem', path: '/' },
+  { name: 'Brannkonsept', path: '/brannkonsept' },
+]
+
 export default function BrannkonseptPage() {
   return (
     <>
+      <JsonLd data={faqJsonLd(faqItems)} />
+      <JsonLd data={breadcrumbJsonLd(breadcrumb)} />
       {/* Header */}
       <section className="bg-brand-dark py-16 lg:py-24">
         <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8">

@@ -7,6 +7,9 @@ import FAQAccordion from '@/components/FAQAccordion'
 import ReviewCard from '@/components/ReviewCard'
 import ScrollReveal from '@/components/ScrollReveal'
 import ArcticCircleLine from '@/components/ArcticCircleLine'
+import JsonLd from '@/components/JsonLd'
+import { faqJsonLd } from '@/lib/schema'
+import { articles } from '@/lib/articles'
 
 export const metadata: Metadata = {
   title: 'Brannprosjektering i Rana | Brannkonsult AS',
@@ -89,33 +92,10 @@ const faqItems = [
   },
 ]
 
-const articles = [
-  {
-    href: '/artikler/pipebrann',
-    image: '/images/article-pipebrann.jpg',
-    title: 'Forebygg pipebrann med enkle grep',
-    excerpt:
-      'Er du i faresonen for å kunne få brann i skorsteinen? Les om hva som forårsaker pipebrann og enkle tiltak for å redusere risikoen.',
-  },
-  {
-    href: '/artikler/brannslokker',
-    image: '/images/article-brannslukker.jpg',
-    title: 'Har du riktig brannslokkeapparat?',
-    excerpt:
-      'Vet du hvilken type brannslokker du trenger i hjemmet? Vi gjennomgår krav og forskjellen mellom pulver- og skumapparater.',
-  },
-  {
-    href: '/artikler/roykvarsler',
-    image: '/images/article-roykvarsler.jpg',
-    title: 'Riktig røykvarsler redder liv',
-    excerpt:
-      'Er du godt nok sikret hvis det oppstår brann om natten? Vi forklarer krav til røykvarslere og riktig plassering.',
-  },
-]
-
 export default function HomePage() {
   return (
     <>
+      <JsonLd data={faqJsonLd(faqItems)} />
       {/* ── HERO ── */}
       <section className="relative min-h-screen lg:min-h-[90vh] bg-brand-dark flex flex-col lg:flex-row">
         <div className="relative z-10 flex flex-col justify-center w-full lg:w-[55%] px-4 sm:px-6 lg:pl-12 xl:pl-20 py-24 lg:py-0">
@@ -247,7 +227,7 @@ export default function HomePage() {
           <ScrollReveal className="flex items-end justify-between mb-10">
             <h2 className="text-brand-black text-3xl lg:text-4xl font-black">Nyttige artikler</h2>
             <Link
-              href="/artikler/pipebrann"
+              href="/artikler"
               className="text-brand-orange font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all"
             >
               Se alle <ArrowRight size={16} />

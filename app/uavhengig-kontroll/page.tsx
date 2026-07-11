@@ -5,12 +5,20 @@ import { Phone, Mail, CheckCircle, ShieldCheck } from 'lucide-react'
 import FAQAccordion from '@/components/FAQAccordion'
 import ScrollReveal from '@/components/ScrollReveal'
 import ArcticCircleLine from '@/components/ArcticCircleLine'
+import JsonLd from '@/components/JsonLd'
+import { faqJsonLd, breadcrumbJsonLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Uavhengig kontroll av brann i Rana | Brannkonsult AS',
   description:
     'Uavhengig kontroll (UK) av brannkonsept i Mo i Rana. Sentralt godkjent foretak. Vi gjennomgår brannkonsept, branntegninger og løsningsvalg mot TEK17. Fast pris.',
   alternates: { canonical: 'https://www.ranabrannkonsult.no/uavhengig-kontroll' },
+  openGraph: {
+    title: 'Uavhengig kontroll av brann i Rana | Brannkonsult AS',
+    description:
+      'Uavhengig kontroll (UK) av brannkonsept i Mo i Rana. Vi gjennomgår brannkonsept, branntegninger og løsningsvalg mot TEK17.',
+    url: 'https://www.ranabrannkonsult.no/uavhengig-kontroll',
+  },
 }
 
 const faqItems = [
@@ -36,9 +44,16 @@ const faqItems = [
   },
 ]
 
+const breadcrumb = [
+  { name: 'Hjem', path: '/' },
+  { name: 'Uavhengig kontroll', path: '/uavhengig-kontroll' },
+]
+
 export default function UavhengigKontrollPage() {
   return (
     <>
+      <JsonLd data={faqJsonLd(faqItems)} />
+      <JsonLd data={breadcrumbJsonLd(breadcrumb)} />
       <section className="bg-brand-dark py-16 lg:py-24">
         <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="hero-1 flex items-center gap-2 text-brand-orange text-sm mb-4">

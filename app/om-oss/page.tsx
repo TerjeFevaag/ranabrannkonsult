@@ -4,12 +4,20 @@ import Link from 'next/link'
 import { CheckCircle, Phone, Mail, MapPin } from 'lucide-react'
 import ScrollReveal from '@/components/ScrollReveal'
 import ArcticCircleLine from '@/components/ArcticCircleLine'
+import JsonLd from '@/components/JsonLd'
+import { breadcrumbJsonLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Om Brannkonsult AS | Sentralt godkjent brannrådgiver',
   description:
     'Brannkonsult AS er et sentralt godkjent brannrådgiverfirma med over 1200 prosjekter siden 2013. Vi tilbyr brannkonsept, brannprosjektering og branntilsyn i Mo i Rana og på Helgeland.',
   alternates: { canonical: 'https://www.ranabrannkonsult.no/om-oss' },
+  openGraph: {
+    title: 'Om Brannkonsult AS | Sentralt godkjent brannrådgiver',
+    description:
+      'Sentralt godkjent brannrådgiverfirma med over 1200 prosjekter siden 2013, i Mo i Rana og på Helgeland.',
+    url: 'https://www.ranabrannkonsult.no/om-oss',
+  },
 }
 
 const process = [
@@ -20,9 +28,15 @@ const process = [
   { step: '5', title: 'Dokumentasjon levert', desc: 'Komplett leveranse klar for kommunen.' },
 ]
 
+const breadcrumb = [
+  { name: 'Hjem', path: '/' },
+  { name: 'Om oss', path: '/om-oss' },
+]
+
 export default function OmOssPage() {
   return (
     <>
+      <JsonLd data={breadcrumbJsonLd(breadcrumb)} />
       {/* Header */}
       <section className="bg-brand-dark py-16 lg:py-24">
         <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8">

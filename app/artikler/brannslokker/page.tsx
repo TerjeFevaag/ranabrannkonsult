@@ -2,23 +2,38 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import ScrollReveal from '@/components/ScrollReveal'
+import JsonLd from '@/components/JsonLd'
+import { breadcrumbJsonLd } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Har du riktig brannslokkeapparat? | Brannkonsult AS',
   description:
     'Hvilken type brannslokker trenger du? Vi gjennomgår krav til brannslokking i boliger, forskjellen mellom pulver og skum, og riktig bruk. Råd fra Brannkonsult AS.',
   alternates: { canonical: 'https://www.ranabrannkonsult.no/artikler/brannslokker' },
+  openGraph: {
+    title: 'Har du riktig brannslokkeapparat? | Brannkonsult AS',
+    description: 'Krav til brannslokking i boliger, og forskjellen mellom pulver- og skumapparater.',
+    url: 'https://www.ranabrannkonsult.no/artikler/brannslokker',
+    images: [{ url: '/images/article-brannslukker.jpg', width: 1200, height: 630, alt: 'Brannslokkeapparat' }],
+  },
 }
+
+const breadcrumb = [
+  { name: 'Hjem', path: '/' },
+  { name: 'Artikler', path: '/artikler' },
+  { name: 'Riktig brannslokker', path: '/artikler/brannslokker' },
+]
 
 export default function BrannslokkePage() {
   return (
     <>
+      <JsonLd data={breadcrumbJsonLd(breadcrumb)} />
       <section className="bg-brand-dark py-12 lg:py-16">
         <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="hero-1 flex items-center gap-2 text-brand-orange text-sm mb-4">
             <Link href="/" className="hover:underline">Hjem</Link>
             <span>/</span>
-            <Link href="/" className="hover:underline">Artikler</Link>
+            <Link href="/artikler" className="hover:underline">Artikler</Link>
             <span>/</span>
             <span>Riktig brannslokker</span>
           </div>
