@@ -43,6 +43,11 @@ const faqItems = [
       'Nei — vi er en nøytral brannrådgiver og selger ingen produkter eller håndverkertjenester. Dette sikrer at rådgivningen alltid er i ditt beste interesse.',
   },
   {
+    question: 'Tilbyr dere brannprosjektering utenfor Mo i Rana?',
+    answer:
+      'Ja. Foruten Mo i Rana tilbyr vi brannprosjektering i blant annet Hemnes, Nesna og Rødøy, samt ellers i Nordland.',
+  },
+  {
     question: 'Hva trengs fra deg for å gi et pristilbud?',
     answer:
       'Vi trenger adresse, antall etasjer og bruksareal, plantegninger og en kort prosjektbeskrivelse. Jo mer informasjon vi får, jo mer presist kan vi prise oppdraget. Send det til oss på e-post eller via kontaktskjemaet.',

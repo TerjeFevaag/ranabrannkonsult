@@ -43,6 +43,11 @@ const faqItems = [
       'Kostnaden avhenger av byggets størrelse og kompleksitet. Vi gir et fastpristilbud etter å ha mottatt informasjon om bygget. Ta kontakt for en uforpliktende prat og estimat.',
   },
   {
+    question: 'Tilbyr dere branninspeksjon utenfor Mo i Rana?',
+    answer:
+      'Ja. Foruten Mo i Rana tilbyr vi branninspeksjon i blant annet Hemnes, Nesna og Rødøy, samt ellers i Nordland.',
+  },
+  {
     question: 'Gjelder oppgraderingskravet for alle eldre bygninger?',
     answer:
       'Ja — alle eksisterende bygninger skal oppgraderes til et minimum tilsvarende det som gjaldt for nybygg i 1985 (BF85). For mange eldre bygg og industrianlegg i Rana betyr dette at det er behov for tiltak. Vi hjelper deg med å vurdere hva som er nødvendig.',

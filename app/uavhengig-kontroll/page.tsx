@@ -42,6 +42,11 @@ const faqItems = [
     answer:
       'Ja — det er faktisk et krav at den som utfører UK ikke er den samme som har prosjektert. Vi kan ta på oss uavhengig kontroll av brannkonsept utarbeidet av andre rådgivere.',
   },
+  {
+    question: 'Tilbyr dere uavhengig kontroll utenfor Mo i Rana?',
+    answer:
+      'Ja. Foruten Mo i Rana tilbyr vi uavhengig kontroll i blant annet Hemnes, Nesna og Rødøy, samt ellers i Nordland.',
+  },
 ]
 
 const breadcrumb = [

@@ -48,6 +48,11 @@ const faqItems = [
       'For å gi et nøyaktig tilbud trenger vi: adresse/matrikkel, antall etasjer og bruksareal, tegninger (situasjonsplan og plantegninger) og en kort prosjektbeskrivelse. Send dette til oss så sender vi tilbud innen 24 timer.',
   },
   {
+    question: 'Tilbyr dere brannkonsept utenfor Mo i Rana?',
+    answer:
+      'Ja. Foruten Mo i Rana tilbyr vi brannkonsept i blant annet Hemnes, Nesna og Rødøy, samt ellers i Nordland.',
+  },
+  {
     question: 'Hvor lang tid tar det å utarbeide et brannkonsept?',
     answer:
       'Leveringstid avhenger av prosjektets omfang og vår arbeidsbelastning. For de fleste prosjekter leverer vi innen 5–10 virkedager etter mottatt bestilling og komplett underlag. Har du tidsfrist, oppgi dette i forespørselen.',
