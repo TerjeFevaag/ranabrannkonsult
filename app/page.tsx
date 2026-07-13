@@ -74,11 +74,6 @@ const reviews = [
   },
   {
     quote:
-      'Godt fornøyd med bistand-kjapp og konstruktiv, samt at det er foretatt en god balanse mellom krav og praktiske løsninger.',
-    author: 'Øyvind Hamre',
-  },
-  {
-    quote:
       'Informasjonen og visualiseringen i tilsendte rapporter har vært meget bra. I tillegg har Brannkonsult vært imøtekommende for ytterligere spørsmål, og behjelpelig med også andre korte spørsmål om andre ting.',
     author: 'Magne Sjømark',
     company: 'Sjusjø AS',
