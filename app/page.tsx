@@ -61,22 +61,26 @@ const reviews = [
     quote:
       'Lett å få kontakt med firmaet på ulike spørsmål som dukker opp underveis. Jeg har kun hatt gode opplevelser, selv om ikke alt var helt klart for meg som ufaglært.',
     author: 'Kirsti Andresen',
+    rating: 4,
   },
   {
     quote:
       'På spørsmål om brannkonsept, og ansvarsrett for fagområdet, fikk vi raskt og proffesjonelt svar. Hyggelig, ryddig og konstruktiv oppfølging.',
     author: 'Sivilarkitekt Sverre Krefting',
+    rating: 5,
   },
   {
     quote:
       'Raskt svar, relevant og grundig rapport, kommunen likte måten det var gjort på. Måtte endre noe i rapporten pga ny planløsning. Ny oppdatert rapport innen kort tid. Alt til bra priser.',
     author: 'Vegard Hals',
+    rating: 5,
   },
   {
     quote:
       'Informasjonen og visualiseringen i tilsendte rapporter har vært meget bra. I tillegg har Brannkonsult vært imøtekommende for ytterligere spørsmål, og behjelpelig med også andre korte spørsmål om andre ting.',
     author: 'Magne Sjømark',
     company: 'Sjusjø AS',
+    rating: 5,
   },
 ]
 
