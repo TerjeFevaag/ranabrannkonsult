@@ -56,6 +56,9 @@ const jsonLd = {
       },
       areaServed: [
         { '@type': 'City', name: 'Mo i Rana' },
+        { '@type': 'City', name: 'Hemnes' },
+        { '@type': 'City', name: 'Nesna' },
+        { '@type': 'City', name: 'Rødøy' },
         { '@type': 'AdministrativeArea', name: 'Helgeland' },
         { '@type': 'AdministrativeArea', name: 'Nordland' },
       ],
