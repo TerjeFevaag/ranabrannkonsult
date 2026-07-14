@@ -64,7 +64,7 @@ export default function OmOssPage() {
             <ScrollReveal className="lg:w-1/2">
               <h2 className="text-brand-black text-3xl font-black mb-6">Vår bakgrunn</h2>
               <p className="text-brand-darkgray leading-relaxed mb-5">
-                Vi er et spesialisert brannprosjekteringsfirma med base i Mo i Rana, og vi tar oppdrag over hele landet. Vår virksomhet har sentral godkjenning for brannprosjektering i tiltaksklasse 1 og 2.
+                Vi er et spesialisert brannprosjekteringsfirma representert i Mo i Rana, og vi tar oppdrag over hele landet. Vår virksomhet har sentral godkjenning for brannprosjektering i tiltaksklasse 1 og 2.
               </p>
               <p className="text-brand-darkgray leading-relaxed mb-5">
                 Siden oppstart i 2013 har vi vært involvert i over 1200 forskjellige brannprosjekter — fra små garasjer og enkle tilbygg til store leilighetsbygg og næringseiendommer.
@@ -184,7 +184,7 @@ export default function OmOssPage() {
           <ScrollReveal className="max-w-3xl">
             <h2 className="text-brand-black text-3xl font-black mb-5">Dekningsområde</h2>
             <p className="text-brand-darkgray leading-relaxed">
-              Vi har base i Mo i Rana og dekker hele Rana-regionen og Helgeland — inkludert Hemnes, Nesna og Rødøy — men tar oppdrag i hele Nordland og over hele landet. Enten prosjektet ditt ligger i sentrum, ute ved Mo Industripark eller lengre ut på Helgeland, er vi tilgjengelige for befaring og rådgivning.
+              Vi er representert i Mo i Rana og dekker hele Rana-regionen og Helgeland — inkludert Hemnes, Nesna og Rødøy — men tar oppdrag i hele Nordland og over hele landet. Enten prosjektet ditt ligger i sentrum, ute ved Mo Industripark eller lengre ut på Helgeland, er vi tilgjengelige for befaring og rådgivning.
             </p>
           </ScrollReveal>
         </div>
