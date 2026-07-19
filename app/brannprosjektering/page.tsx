@@ -11,46 +11,46 @@ import { faqJsonLd, breadcrumbJsonLd } from '@/lib/schema'
 export const metadata: Metadata = {
   title: 'Brannprosjektering i Rana | Brannkonsult AS',
   description:
-    'Profesjonell brannprosjektering i Mo i Rana og på Helgeland. Sentralt godkjent TKL 1+2. Fast pris fra ca. 15 000 kr. Tilbygg, bruksendring, nybygg.',
+    'Brannprosjektering for nybygg, tilbygg og bruksendring i Mo i Rana og på Helgeland. Sentralt godkjent TKL 1+2, fastpris fra ca. 15 000 kr.',
   alternates: { canonical: 'https://www.ranabrannkonsult.no/brannprosjektering' },
   openGraph: {
     title: 'Brannprosjektering i Rana | Brannkonsult AS',
     description:
-      'Profesjonell brannprosjektering i Mo i Rana og på Helgeland. Sentralt godkjent TKL 1+2. Fast pris fra ca. 15 000 kr.',
+      'Brannprosjektering for nybygg, tilbygg og bruksendring i Mo i Rana og på Helgeland. Sentralt godkjent TKL 1+2.',
     url: 'https://www.ranabrannkonsult.no/brannprosjektering',
   },
 }
 
 const faqItems = [
   {
-    question: 'Hva koster brannprosjektering i Mo i Rana?',
+    question: 'Utløser et tilbygg på huset mitt krav om brannprosjektering?',
     answer:
-      'Et brannkonsept i tiltaksklasse 2 starter fra ca. 15 000 kr ekskl. mva., inkludert branntegninger. Vi tilbyr alltid fastpris. Send oss tegninger og prosjektbeskrivelse for et nøyaktig tilbud.',
+      'I de fleste tilfeller, ja — sammen med bruksendring, påbygg, ny boenhet i et eksisterende bygg og bytte av vinduer eller dører i brannvegg. Er du usikker, send oss en kort beskrivelse så vurderer vi det gratis.',
   },
   {
-    question: 'Trenger jeg brannprosjektering for tilbygg eller bruksendring?',
+    question: 'Hva koster brannprosjektering?',
     answer:
-      'Ja, de fleste tiltak som krever søknad til kommunen utløser også krav om brannprosjektering — dette gjelder tilbygg, påbygg, bruksendring, ny boenhet i eksisterende bygg og bytte av vinduer i brannvegg. Ta kontakt for en gratis vurdering.',
+      'Fra ca. 15 000 kr ekskl. mva. i tiltaksklasse 2, inkludert branntegninger, alltid til fastpris. Send tegninger og prosjektbeskrivelse, så får du et konkret tall.',
   },
   {
-    question: 'Er befaring nødvendig?',
+    question: 'Kommer dere på befaring i Mo i Rana, eller løses det digitalt?',
     answer:
-      'I de fleste saker er befaring ikke nødvendig. Med digitale kartdata, tegningsunderlag og bilder kan vi utarbeide god brannprosjektering uten å besøke bygget. Vi gir beskjed hvis vi ser behov for befaring.',
+      'De fleste saker løses uten befaring — vi jobber ut fra kartdata, tegningsunderlag og bilder. Gjelder det et eldre bygg med begrenset dokumentasjon fra før, avtaler vi befaring.',
   },
   {
-    question: 'Tilbyr dere håndverkertjenester?',
+    question: 'Kan dere levere produkter eller utføre selve byggearbeidet?',
     answer:
-      'Nei — vi er en nøytral brannrådgiver og selger ingen produkter eller håndverkertjenester. Dette sikrer at rådgivningen alltid er i ditt beste interesse.',
+      'Nei, vi er en nøytral brannrådgiver uten egne produkter eller håndverkertjenester å selge. Det sikrer at anbefalingene er i ditt beste interesse.',
   },
   {
-    question: 'Tilbyr dere brannprosjektering utenfor Mo i Rana?',
+    question: 'Tar dere oppdrag utenfor Mo i Rana sentrum?',
     answer:
-      'Ja. Foruten Mo i Rana tilbyr vi brannprosjektering i blant annet Hemnes, Nesna og Rødøy, samt ellers i Nordland.',
+      'Ja — blant annet i Hemnes, Nesna og Rødøy, og ellers på Helgeland og i Nordland.',
   },
   {
-    question: 'Hva trengs fra deg for å gi et pristilbud?',
+    question: 'Hva trenger dere fra meg for å regne ut en pris?',
     answer:
-      'Vi trenger adresse, antall etasjer og bruksareal, plantegninger og en kort prosjektbeskrivelse. Jo mer informasjon vi får, jo mer presist kan vi prise oppdraget. Send det til oss på e-post eller via kontaktskjemaet.',
+      'Adresse, antall etasjer og bruksareal, plantegninger og en kort beskrivelse av tiltaket. Jo mer underlag vi får, desto mer presist blir tilbudet — send det på e-post eller via kontaktskjemaet.',
   },
 ]
 
@@ -72,10 +72,10 @@ export default function BrannprosjekteringPage() {
             <span>Brannprosjektering</span>
           </div>
           <h1 className="hero-2 text-brand-white text-4xl lg:text-5xl font-black max-w-2xl">
-            Brannprosjektering i Mo i Rana
+            Brannprosjektering for bygget ditt i Rana
           </h1>
           <p className="hero-3 text-brand-white/70 text-lg mt-4 max-w-xl leading-relaxed">
-            Vi sørger for at bygget ditt oppfyller alle krav til brannsikkerhet — til fast pris og med rask levering.
+            Enten det gjelder et industribygg ved Mo Industripark eller et tilbygg på boligen — vi finner løsningen som oppfyller kravene uten unødvendige kostnader.
           </p>
           <div className="hero-4 mt-6 max-w-xl">
             <ArcticCircleLine dark />
@@ -89,7 +89,7 @@ export default function BrannprosjekteringPage() {
             <div className="lg:w-[68%]">
               <ScrollReveal>
                 <p className="text-brand-darkgray text-lg leading-relaxed mb-8">
-                  Brannprosjektering betyr skriftlig planlegging av nødvendig brannsikring i og rundt bygningen. Vi sørger for at ditt bygg i Rana oppfyller alle krav i plan- og bygningsloven og brann- og eksplosjonsvernloven — til fast pris.
+                  Brannprosjektering er den skriftlige planleggingen av brannsikringen i og rundt et bygg — dokumentasjonen som viser at plan- og bygningsloven og brann- og eksplosjonsvernloven er ivaretatt. Vi utarbeider dette for byggeiere, arkitekter og entreprenører i Rana-regionen, til fastpris.
                 </p>
               </ScrollReveal>
 
@@ -104,14 +104,14 @@ export default function BrannprosjekteringPage() {
                   />
                 </div>
 
-                <h2 className="text-brand-black text-2xl font-black mb-4">Når er det behov for brannprosjektering?</h2>
+                <h2 className="text-brand-black text-2xl font-black mb-4">Når utløses kravet?</h2>
                 <ul className="space-y-3 mb-8">
                   {[
-                    'Bytte av vinduer eller dører i brannvegg/seksjoneringsvegg',
-                    'Tilbygg eller påbygg på eksisterende bygg',
-                    'Bruksendring (f.eks. garasje til boenhet)',
-                    'Etablering av ny selvstendig boenhet (utleieenhet)',
-                    'Nybygg — boliger, næringsbygg, industribygg',
+                    'Nybygg — bolig, næringsbygg eller industribygg',
+                    'Tilbygg eller påbygg på et eksisterende bygg',
+                    'Bruksendring, for eksempel fra garasje til boenhet',
+                    'Ny, selvstendig boenhet i et bygg du allerede eier',
+                    'Bytte av vinduer eller dører i en brann- eller seksjoneringsvegg',
                     'Rehabilitering av eldre bygg med branntekniske mangler',
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-3 text-brand-darkgray">
@@ -123,36 +123,29 @@ export default function BrannprosjekteringPage() {
               </ScrollReveal>
 
               <ScrollReveal>
-                <h2 className="text-brand-black text-2xl font-black mb-4">Risikoklasser</h2>
+                <h2 className="text-brand-black text-2xl font-black mb-4">Risiko-, brann- og tiltaksklasse</h2>
                 <p className="text-brand-darkgray leading-relaxed mb-4">
-                  Alle bygg klassifiseres i en risikoklasse (RKL 1–6) ut fra bruksformål og konsekvensen en brann kan få for personer i bygget. Eksempler: RKL 1 (garasjer, lager), RKL 2 (boliger), RKL 4 (kontor, industri, undervisning), RKL 5 (hotell, overnatting) og RKL 6 (sykehus).
+                  Bygget klassifiseres først i en risikoklasse (RKL 1–6) ut fra bruksformål og hvor alvorlig konsekvensen av en brann vil være for menneskene der. Risikoklassen, sammen med antall etasjer, gir deretter brannklassen (BKL 1–4), som bestemmer de branntekniske kravene. Tiltaksklassen (TKL 1–3) sier noe om hvor kompleks selve prosjekteringen er — vi er sentralt godkjent for TKL 1 og 2, som dekker de aller fleste byggesaker på Helgeland.
                 </p>
               </ScrollReveal>
 
               <ScrollReveal>
-                <h2 className="text-brand-black text-2xl font-black mb-4">Brannklasser og tiltaksklasser</h2>
+                <h2 className="text-brand-black text-2xl font-black mb-4">Involver oss før spaden settes i jorda</h2>
                 <p className="text-brand-darkgray leading-relaxed mb-8">
-                  Brannklassen (BKL 1–4) fastsettes ut fra risikoklasse og antall etasjer, og bestemmer hvilke branntekniske krav bygget må oppfylle. Tiltaksklassen (TKL 1–3) sier noe om kompleksiteten i prosjekteringsoppgaven og hvilken kompetanse som kreves av den prosjekterende. Vi er sentralt godkjent for brannprosjektering i TKL 1 og 2.
+                  Brannkrav som dukker opp sent i prosessen kan kreve dyre endringer i konstruksjonen. Kommer vi inn allerede i skissefasen, kan vi ofte peke på løsninger som er både billigere og enklere å bygge.
                 </p>
               </ScrollReveal>
 
               <ScrollReveal>
-                <h2 className="text-brand-black text-2xl font-black mb-4">Start tidlig — spar penger</h2>
-                <p className="text-brand-darkgray leading-relaxed mb-8">
-                  Jo tidligere i prosjektet du involverer en brannrådgiver, desto enklere og billigere er det å finne gode løsninger. Brannkrav som oppdages sent i prosessen kan kreve dyre konstruksjonsendringer. Vi anbefaler å ta kontakt allerede i skissefasen.
-                </p>
-              </ScrollReveal>
-
-              <ScrollReveal>
-                <h2 className="text-brand-black text-2xl font-black mb-4">Hva vi tilbyr</h2>
+                <h2 className="text-brand-black text-2xl font-black mb-4">Det får du</h2>
                 <ul className="space-y-3 mb-8">
                   {[
-                    'Brannkonsept og brannteknisk notat',
-                    'Branntegninger (brannceller, rømningsveier, seksjoneringer)',
+                    'Brannkonsept eller brannteknisk notat, avhengig av tiltaket',
+                    'Branntegninger med brannceller, rømningsveier og seksjoneringer',
                     'Ansvarsrett overfor kommunen i tiltaksklasse 1 og 2',
-                    'Fastpris — ingen overraskelser',
-                    'Levering innen 5–10 virkedager',
-                    'God oppfølging gjennom hele byggesaken',
+                    'Fastpris avtalt på forhånd',
+                    'Levering normalt innen 5–10 virkedager',
+                    'Oppfølging gjennom resten av byggesaken, uten ekstra kostnad',
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-3 text-brand-darkgray">
                       <CheckCircle size={18} className="text-brand-orange shrink-0 mt-0.5" />
@@ -163,12 +156,12 @@ export default function BrannprosjekteringPage() {
               </ScrollReveal>
 
               <ScrollReveal>
-                <h2 className="text-brand-black text-2xl font-black mb-4">Hva vi trenger fra deg</h2>
+                <h2 className="text-brand-black text-2xl font-black mb-4">Dette trenger vi fra deg</h2>
                 <ul className="space-y-3 mb-10">
                   {[
-                    'Situasjonsplan / adresse',
-                    'Byggesakstegninger (plan, snitt, fasade)',
-                    'Kort prosjektbeskrivelse',
+                    'Adresse eller situasjonsplan',
+                    'Byggesakstegninger — plan, snitt og fasade',
+                    'Kort beskrivelse av tiltaket',
                     'Eventuelle forhåndsuttalelser fra kommunen',
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-3 text-brand-darkgray">
@@ -190,12 +183,12 @@ export default function BrannprosjekteringPage() {
             <div className="lg:w-[32%]">
               <ScrollReveal delay={200}>
                 <div className="plate-corner border border-brand-gray p-6 bg-brand-dark">
-                  <h3 className="font-bold text-xl mb-3 text-brand-white">Be om tilbud</h3>
+                  <h3 className="font-bold text-xl mb-3 text-brand-white">Planlegger du et byggeprosjekt?</h3>
                   <p className="text-brand-white/60 text-sm mb-6 leading-relaxed">
-                    Send oss tegningene og vi sender deg et fastpristilbud innen 24 timer.
+                    Send tegningene dine, så har du et fastpristilbud i hånden innen 24 timer.
                   </p>
                   <Link href="/kontakt-oss" className="block bg-brand-orange text-brand-white font-bold px-6 py-3.5 rounded-[10px] text-center hover:opacity-90 transition-opacity mb-6">
-                    Kontakt oss
+                    Send tegningene
                   </Link>
                   <div className="space-y-3 pt-4 border-t border-brand-white/10">
                     <a href="tel:+4740051437" className="flex items-center gap-2 text-brand-white/60 hover:text-brand-orange transition-colors text-sm">
@@ -233,10 +226,10 @@ export default function BrannprosjekteringPage() {
               <ArcticCircleLine dark />
             </div>
             <h2 className="text-brand-white text-2xl lg:text-3xl font-black mb-6">
-              Be om tilbud på brannprosjektering i Rana
+              La oss se på tegningene dine
             </h2>
             <Link href="/kontakt-oss" className="inline-block bg-brand-orange text-brand-white font-bold px-8 py-3.5 rounded-[10px] hover:opacity-90 transition-opacity">
-              Få tilbud nå
+              Send prosjektet
             </Link>
           </div>
         </section>

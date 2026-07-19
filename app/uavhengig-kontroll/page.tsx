@@ -11,41 +11,41 @@ import { faqJsonLd, breadcrumbJsonLd } from '@/lib/schema'
 export const metadata: Metadata = {
   title: 'Uavhengig kontroll av brann i Rana | Brannkonsult AS',
   description:
-    'Uavhengig kontroll (UK) av brannkonsept i Mo i Rana. Sentralt godkjent foretak. Vi gjennomgår brannkonsept, branntegninger og løsningsvalg mot TEK17. Fast pris.',
+    'Uavhengig kontroll (UK) av brannkonsept for byggesaker i Mo i Rana og på Helgeland. Vi kontrollerer branntegninger og løsningsvalg mot TEK17, til fastpris.',
   alternates: { canonical: 'https://www.ranabrannkonsult.no/uavhengig-kontroll' },
   openGraph: {
     title: 'Uavhengig kontroll av brann i Rana | Brannkonsult AS',
     description:
-      'Uavhengig kontroll (UK) av brannkonsept i Mo i Rana. Vi gjennomgår brannkonsept, branntegninger og løsningsvalg mot TEK17.',
+      'Uavhengig kontroll (UK) av brannkonsept for byggesaker i Mo i Rana og på Helgeland, kontrollert mot TEK17.',
     url: 'https://www.ranabrannkonsult.no/uavhengig-kontroll',
   },
 }
 
 const faqItems = [
   {
-    question: 'Hva er uavhengig kontroll av brann?',
+    question: 'Hva innebærer uavhengig kontroll av brann, konkret?',
     answer:
-      'Uavhengig kontroll (UK) er en obligatorisk kvalitetssikring der en uavhengig part kontrollerer at brannprosjekteringen er utført i henhold til gjeldende forskrifter. Kontrollen utføres av et firma uten tilknytning til det som har prosjektert.',
+      'En kontrollør uten tilknytning til den som har prosjektert går gjennom brannkonseptet og sjekker at det holder mål opp mot gjeldende forskrifter. Det er en lovpålagt kvalitetssikring, ikke en frivillig ekstra sjekk.',
   },
   {
-    question: 'Når er det krav om uavhengig kontroll av brann?',
+    question: 'Må jeg ha uavhengig kontroll på prosjektet mitt i Rana?',
     answer:
-      'Det er krav om UK brann når prosjekteringen av brann utføres i tiltaksklasse 2 (TKL 2) eller høyere, i henhold til SAK10. Dette gjelder de fleste næringsbygg, industribygg, boligblokker og bygninger med mer enn 2 etasjer.',
+      'Er brannprosjekteringen i tiltaksklasse 2 (TKL 2) eller høyere, ja — i henhold til SAK10. Det gjelder de fleste næringsbygg, industribygg, boligblokker og bygg med mer enn to etasjer.',
   },
   {
-    question: 'Hva koster uavhengig kontroll?',
+    question: 'Hva koster det?',
     answer:
-      'Kostnaden avhenger av prosjektets omfang og kompleksitet. Vi gir fastpristilbud etter gjennomgang av brannkonseptet. Ta kontakt med oss for et uforpliktende estimat.',
+      'Prisen avhenger av brannkonseptets omfang og kompleksitet. Send oss dokumentasjonen, så gir vi et fastpristilbud før vi starter.',
   },
   {
-    question: 'Kan dere ta UK selv om dere ikke har prosjektert brannkonseptet?',
+    question: 'Vi har fått brannkonseptet laget av en annen rådgiver — kan dere likevel gjennomføre kontrollen?',
     answer:
-      'Ja — det er faktisk et krav at den som utfører UK ikke er den samme som har prosjektert. Vi kan ta på oss uavhengig kontroll av brannkonsept utarbeidet av andre rådgivere.',
+      'Ja, og det er faktisk et krav — den som utfører kontrollen kan ikke være den samme som har prosjektert. Vi tar oppdrag med uavhengig kontroll av brannkonsept utarbeidet av andre.',
   },
   {
-    question: 'Tilbyr dere uavhengig kontroll utenfor Mo i Rana?',
+    question: 'Dekker dere uavhengig kontroll utenfor Mo i Rana?',
     answer:
-      'Ja. Foruten Mo i Rana tilbyr vi uavhengig kontroll i blant annet Hemnes, Nesna og Rødøy, samt ellers i Nordland.',
+      'Ja — blant annet i Hemnes, Nesna og Rødøy, og ellers på Helgeland og i Nordland.',
   },
 ]
 
@@ -67,10 +67,10 @@ export default function UavhengigKontrollPage() {
             <span>Uavhengig kontroll</span>
           </div>
           <h1 className="hero-2 text-brand-white text-4xl lg:text-5xl font-black max-w-2xl">
-            Uavhengig kontroll av brannkonsept i Mo i Rana
+            Uavhengig kontroll (UK) for byggesaker i Rana
           </h1>
           <p className="hero-3 text-brand-white/70 text-lg mt-4 max-w-xl leading-relaxed">
-            Krav om UK brann? Vi gjennomgår brannkonseptet og utfører uavhengig kontroll for byggesaker i Rana og på Helgeland.
+            Skal brannkonseptet kontrolleres av noen andre enn den som prosjekterte det? Vi tar oppdraget, uansett hvem som har laget konseptet.
           </p>
           <div className="hero-4 mt-6 max-w-xl">
             <ArcticCircleLine dark />
@@ -84,7 +84,7 @@ export default function UavhengigKontrollPage() {
             <div className="lg:w-[68%]">
               <ScrollReveal>
                 <p className="text-brand-darkgray text-lg leading-relaxed mb-8">
-                  I mange byggeprosjekter er det krav om uavhengig kontroll (UK) av brannsikkerheten. Kontrollen skal sikre at brannkonseptet er i tråd med gjeldende forskrifter og at prosjekteringen holder nødvendig kvalitet. Dette gir økt trygghet, reduserer risiko for feil og bidrar til en mer forutsigbar byggeprosess.
+                  For en del byggeprosjekter i Rana er uavhengig kontroll av brannsikkerheten ikke valgfritt — det er et krav for at byggesaken skal gå videre. Kontrollen fanger opp feil før de blir dyre å rette, og gir kommunen trygghet for at prosjekteringen faktisk holder mål.
                 </p>
               </ScrollReveal>
 
@@ -99,22 +99,22 @@ export default function UavhengigKontrollPage() {
                   />
                 </div>
 
-                <h2 className="text-brand-black text-2xl font-black mb-4">Når er det krav om uavhengig kontroll?</h2>
+                <h2 className="text-brand-black text-2xl font-black mb-4">Når utløses kravet?</h2>
                 <p className="text-brand-darkgray leading-relaxed mb-8">
-                  I henhold til SAK10 § 14-2 er det krav om uavhengig kontroll av prosjektering av brann når tiltaket er i tiltaksklasse 2 (TKL 2) eller høyere. Dette gjelder de fleste næringsbygg, industribygg, boligblokker og bygninger med særskilte krav til brannsikkerhet.
+                  SAK10 § 14-2 krever uavhengig kontroll av brannprosjektering fra og med tiltaksklasse 2 (TKL 2). I praksis treffer dette de fleste næringsbygg, industribygg, boligblokker og andre bygg med skjerpede krav til brannsikkerhet — en betydelig andel av byggesakene på Helgeland.
                 </p>
               </ScrollReveal>
 
               <ScrollReveal>
-                <h2 className="text-brand-black text-2xl font-black mb-4">Hva kontrolleres?</h2>
+                <h2 className="text-brand-black text-2xl font-black mb-4">Dette går vi gjennom</h2>
                 <ul className="space-y-3 mb-8">
                   {[
-                    'Brannkonseptets overensstemmelse med TEK17 og Veiledning til TEK17',
-                    'Valg av risikoklasse og brannklasse',
-                    'Branncelleinndeling og seksjoneringer',
+                    'Om brannkonseptet er i tråd med TEK17 og veiledningen til TEK17',
+                    'Valgt risikoklasse og brannklasse',
+                    'Branncelleinndeling og eventuelle seksjoneringer',
                     'Rømningsveier og røykventilasjon',
                     'Krav til branntekniske installasjoner',
-                    'Branntegningenes nøyaktighet og fullstendighet',
+                    'At branntegningene er nøyaktige og komplette',
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-3 text-brand-darkgray">
                       <CheckCircle size={18} className="text-brand-orange shrink-0 mt-0.5" />
@@ -125,13 +125,13 @@ export default function UavhengigKontrollPage() {
               </ScrollReveal>
 
               <ScrollReveal>
-                <h2 className="text-brand-black text-2xl font-black mb-4">Hva vi tilbyr</h2>
+                <h2 className="text-brand-black text-2xl font-black mb-4">Slik gjennomfører vi kontrollen</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
                   {[
-                    { icon: ShieldCheck, title: 'Uavhengig gjennomgang', desc: 'Grundig kontroll av hele brannkonseptet av en erfaren brannrådgiver.' },
-                    { icon: CheckCircle, title: 'Skriftlig kontrollrapport', desc: 'Detaljert rapport med funn, avvik og anbefalinger.' },
+                    { icon: ShieldCheck, title: 'Uavhengig gjennomgang', desc: 'En erfaren brannrådgiver går grundig gjennom hele brannkonseptet.' },
+                    { icon: CheckCircle, title: 'Skriftlig kontrollrapport', desc: 'Funn, avvik og anbefalinger dokumentert i én rapport.' },
                     { icon: ShieldCheck, title: 'Erklæring om ansvarsrett', desc: 'Vi erklærer ansvarsrett som uavhengig kontrollerende for brann.' },
-                    { icon: CheckCircle, title: 'Nøytral part', desc: 'Vi selger ingen produkter og har ingen interesser i valg av løsning.' },
+                    { icon: CheckCircle, title: 'Fastpris', desc: 'Avtalt før vi starter, basert på brannkonseptets omfang.' },
                   ].map((item, i) => (
                     <div key={i} className="plate-corner bg-brand-lightgray p-5 flex items-start gap-3">
                       <item.icon size={20} className="text-brand-orange shrink-0 mt-0.5" />
@@ -145,9 +145,9 @@ export default function UavhengigKontrollPage() {
               </ScrollReveal>
 
               <ScrollReveal>
-                <h2 className="text-brand-black text-2xl font-black mb-4">Nøytral part — vi selger ingen produkter</h2>
+                <h2 className="text-brand-black text-2xl font-black mb-4">Ingen produkter å selge inn</h2>
                 <p className="text-brand-darkgray leading-relaxed mb-8">
-                  Brannkonsult AS tilbyr ingen produkter eller håndverkertjenester. Vi er en ren rådgivende part, noe som gir deg trygghet for at kontrollen er objektiv og faglig fundert.
+                  Vi har ingen brannvarer, byggevarer eller håndverkertjenester i sortimentet — bare rådgivning. Det er nettopp derfor vi kan kontrollere andres prosjektering uten bindinger som svekker objektiviteten.
                 </p>
               </ScrollReveal>
 
@@ -162,12 +162,12 @@ export default function UavhengigKontrollPage() {
             <div className="lg:w-[32%]">
               <ScrollReveal delay={200}>
                 <div className="plate-corner border border-brand-gray p-6 bg-brand-dark">
-                  <h3 className="font-bold text-xl mb-3 text-brand-white">Trenger du UK brann?</h3>
+                  <h3 className="font-bold text-xl mb-3 text-brand-white">Trenger prosjektet ditt UK brann?</h3>
                   <p className="text-brand-white/60 text-sm mb-6 leading-relaxed">
-                    Ta kontakt for uforpliktende tilbud på uavhengig kontroll av brannkonsept i Rana.
+                    Send oss brannkonseptet, så gir vi et fastpristilbud på kontrollen.
                   </p>
                   <Link href="/kontakt-oss" className="block bg-brand-orange text-brand-white font-bold px-6 py-3.5 rounded-[10px] text-center hover:opacity-90 transition-opacity mb-6">
-                    Kontakt oss
+                    Send brannkonseptet
                   </Link>
                   <div className="space-y-3 pt-4 border-t border-brand-white/10">
                     <a href="tel:+4740051437" className="flex items-center gap-2 text-brand-white/60 hover:text-brand-orange transition-colors text-sm">
@@ -205,10 +205,10 @@ export default function UavhengigKontrollPage() {
               <ArcticCircleLine dark />
             </div>
             <h2 className="text-brand-white text-2xl lg:text-3xl font-black mb-6">
-              Kontakt oss for uavhengig kontroll i Rana
+              Klar for uavhengig kontroll?
             </h2>
             <Link href="/kontakt-oss" className="inline-block bg-brand-orange text-brand-white font-bold px-8 py-3.5 rounded-[10px] hover:opacity-90 transition-opacity">
-              Kontakt oss
+              Send brannkonseptet
             </Link>
           </div>
         </section>

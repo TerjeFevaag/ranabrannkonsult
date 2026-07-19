@@ -23,37 +23,37 @@ const services = [
     iconImage: '/images/icon-brannkonsept.gif',
     title: 'Brannkonsept',
     description:
-      'Kommunen krever et brannkonsept ved de fleste byggesaker. Vi utarbeider helhetlige brannkonsept som ivaretar brannsikkerheten i ditt prosjekt — fra garasjer til leilighetsbygg.',
+      'De fleste byggesaker i Rana kommune krever et brannkonsept før søknaden kan behandles. Vi setter opp konseptet slik at det dekker både tiltaket og bygningsmassen rundt.',
     href: '/brannkonsept',
   },
   {
     iconImage: '/images/icon-brannprosjektering.gif',
     title: 'Brannprosjektering',
     description:
-      'Vi sørger for at bygget ditt oppfyller alle krav til brannsikkerhet, og finner praktiske løsninger som sparer både tid og kostnader. Fast pris der det er mulig.',
+      'Skal bygget oppfylle brannkravene uten at det går på bekostning av budsjettet? Vi finner løsninger som holder mål, uten unødvendig fordyrende tiltak.',
     href: '/brannprosjektering',
   },
   {
     iconImage: '/images/icon-branntilsyn.png',
     title: 'Branninspeksjon',
     description:
-      'Har du fått pålegg etter branntilsyn, eller ønsker du en grundig gjennomgang av byggets brannsikkerhet? Vi inspiserer hele bygningen og utarbeider tilstandsrapport.',
+      'Har brannvesenet vært på besøk, eller lurer du på tilstanden i en eldre bygård eller industrihall? Vi går gjennom bygget og dokumenterer hva som eventuelt må utbedres.',
     href: '/branninspeksjon',
   },
   {
     iconImage: '/images/icon-uavhengig-kontroll-brannkonsept.png',
     title: 'Uavhengig kontroll',
     description:
-      'I mange byggeprosjekter er det krav om uavhengig kontroll av brannsikkerheten. Vi sikrer at brannkonseptet er i tråd med gjeldende forskrifter.',
+      'Bygger du i tiltaksklasse 2 eller høyere, er uavhengig kontroll av brannkonseptet et lovkrav. Vi kontrollerer at prosjekteringen holder mål før søknaden går videre.',
     href: '/uavhengig-kontroll',
   },
 ]
 
 const stats = [
-  { number: '1200+', label: 'Prosjekter gjennomført' },
   { number: 'TKL 1+2', label: 'Sentralt godkjent' },
-  { number: 'Fast pris', label: 'Der det er mulig' },
-  { number: 'Hele landet', label: 'Vi tar oppdrag overalt' },
+  { number: 'Fastpris', label: 'Ingen skjulte kostnader' },
+  { number: '5–10 dager', label: 'Typisk leveringstid' },
+  { number: 'Nordland', label: 'Helgeland og resten av fylket' },
 ]
 
 const reviews = [
@@ -86,29 +86,29 @@ const reviews = [
 
 const faqItems = [
   {
-    question: 'Hva koster brannprosjektering i Mo i Rana?',
+    question: 'Hvordan foregår en brannprosjektering når dere ikke har kontor i Rana?',
     answer:
-      'Prisen varierer etter omfang og kompleksitet. Et brannkonsept i tiltaksklasse 2 starter hos oss fra ca. 15 000 kr ekskl. mva., inkludert branntegninger. Vi tilbyr alltid fastpris.',
+      'Det aller meste løses digitalt. Vi jobber ut fra situasjonsplan, tegninger og kartdata du sender oss, og trenger sjelden å reise ut for befaring. Ved større eller uoversiktlige prosjekter avtaler vi det.',
   },
   {
-    question: 'Trenger jeg brannprosjektering for mitt prosjekt?',
+    question: 'Når holder det med et brannteknisk notat, og når må jeg ha et fullt brannkonsept?',
     answer:
-      'De fleste byggesaker krever brannprosjektering — tilbygg, bruksendring, ny boenhet, påbygg. Ta kontakt for en gratis vurdering av ditt prosjekt.',
+      'Mindre tiltak, som enkle bruksendringer eller mindre tilbygg, kan ofte løses med et enklere notat. Større eller mer komplekse prosjekter krever et fullstendig brannkonsept. Vi vurderer dette gratis før vi gir tilbud.',
   },
   {
-    question: 'Er befaring nødvendig?',
+    question: 'Hva koster et brannkonsept?',
     answer:
-      'For nybygg og enklere saker er det ofte ikke nødvendig. Takket være digitale verktøy og kartdata kan vi i mange tilfeller jobbe uten fysisk befaring.',
+      'Et brannkonsept i tiltaksklasse 2 starter fra ca. 15 000 kr ekskl. mva., inkludert branntegninger — alltid til fastpris, uten overraskelser underveis.',
   },
   {
-    question: 'Er dere sentralt godkjent?',
+    question: 'Er Brannkonsult AS sentralt godkjent?',
     answer:
-      'Ja, vi har sentral godkjenning for brannprosjektering i tiltaksklasse 1 og 2. Dette er en garanti for at vi er seriøse, godt forsikret og har dokumenterte referanseprosjekter.',
+      'Ja, for brannprosjektering i tiltaksklasse 1 og 2. Godkjenningen fra DiBK dokumenterer kompetanse, ansvarsforsikring og et godkjent kvalitetssystem.',
   },
   {
-    question: 'Tar dere oppdrag utenfor Rana?',
+    question: 'Dekker dere hele Nordland, eller bare Mo i Rana?',
     answer:
-      'Vi hjelper kunder i Rana, på Helgeland og i hele Nordland, og tar oppdrag over hele landet.',
+      'Vi tar oppdrag i hele Rana-regionen og Helgeland — blant annet Hemnes, Nesna og Rødøy — og ellers i Nordland. Ta kontakt uansett hvor i fylket prosjektet ditt ligger.',
   },
 ]
 
@@ -123,19 +123,19 @@ export default function HomePage() {
             Rana · Helgeland
           </p>
           <h1 className="hero-2 text-brand-white text-4xl lg:text-5xl xl:text-6xl font-black leading-tight mb-6 max-w-xl">
-            Brannprosjektering med industriell presisjon i Mo i Rana
+            Brannkonsept og brannprosjektering for industribyen ved polarsirkelen
           </h1>
           <p className="hero-3 text-brand-white/70 text-base lg:text-lg leading-relaxed mb-8 max-w-lg">
-            Vi hjelper deg med brannprosjektering i Mo i Rana og på Helgeland. Sentralt godkjent
-            foretak med over 1200 gjennomførte prosjekter — fast pris, rask levering og
-            personlig oppfølging.
+            Fra industribygg ved Mo Industripark til hytter og eneboliger langs Helgelandskysten —
+            vi utarbeider brannkonsept og brannprosjektering tilpasset bygningene som faktisk står
+            i Nordland. Sentralt godkjent, fastpris, svar innen 24 timer.
           </p>
           <div className="hero-4 flex flex-wrap gap-4 mb-10">
             <Link
               href="/kontakt-oss"
               className="bg-brand-orange text-brand-white font-bold px-8 py-3.5 rounded-[10px] hover:opacity-90 hover:scale-[1.03] transition-all duration-200"
             >
-              Få gratis tilbud
+              Send oss prosjektet
             </Link>
             <Link
               href="/om-oss"
@@ -167,7 +167,7 @@ export default function HomePage() {
           <ScrollReveal className="text-center mb-12">
             <p className="uppercase font-bold text-brand-orange text-sm tracking-[0.2em] mb-2">Våre tjenester</p>
             <h2 className="text-brand-black text-3xl lg:text-4xl font-black">
-              Hva kan vi hjelpe deg med?
+              Fra søknad til ferdig dokumentasjon
             </h2>
           </ScrollReveal>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -210,8 +210,8 @@ export default function HomePage() {
       <section className="py-16 lg:py-24 bg-brand-white">
         <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal className="text-center mb-12">
-            <p className="uppercase font-bold text-brand-orange text-sm tracking-[0.2em] mb-2">Kundene våre sier</p>
-            <h2 className="text-brand-black text-3xl lg:text-4xl font-black">Hva sier kundene?</h2>
+            <p className="uppercase font-bold text-brand-orange text-sm tracking-[0.2em] mb-2">Tilbakemeldinger</p>
+            <h2 className="text-brand-black text-3xl lg:text-4xl font-black">Dette sier oppdragsgiverne våre</h2>
           </ScrollReveal>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {reviews.map((r, i) => (
@@ -292,24 +292,24 @@ export default function HomePage() {
             <ArcticCircleLine dark />
           </div>
           <h2 className="text-brand-white text-3xl lg:text-4xl font-black mb-4">
-            Klar for å komme i gang?
+            Har du et byggeprosjekt i Nordland?
           </h2>
           <p className="text-brand-white/70 text-lg mb-8 max-w-xl mx-auto">
-            Ta kontakt i dag for et uforpliktende tilbud på brannprosjektering i Rana. Vi svarer
-            innen 24 timer.
+            Send oss situasjonsplan og tegninger, så vurderer vi prosjektet ditt kostnadsfritt.
+            Fastpristilbud innen 24 timer.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
               href="/kontakt-oss"
               className="bg-brand-orange text-brand-white font-bold px-8 py-3.5 rounded-[10px] hover:opacity-90 hover:scale-[1.03] transition-all duration-200"
             >
-              Få gratis tilbud
+              Send oss prosjektet
             </Link>
             <a
               href="tel:+4740051437"
               className="border-2 border-brand-white text-brand-white font-bold px-8 py-3.5 rounded-[10px] hover:bg-brand-white hover:text-brand-black transition-all duration-200 flex items-center gap-2"
             >
-              <Phone size={16} /> Ring oss
+              <Phone size={16} /> Ring oss direkte
             </a>
           </div>
         </ScrollReveal>

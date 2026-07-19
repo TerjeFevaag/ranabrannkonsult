@@ -11,51 +11,51 @@ import { faqJsonLd, breadcrumbJsonLd } from '@/lib/schema'
 export const metadata: Metadata = {
   title: 'Brannkonsept i Rana | Brannkonsult AS',
   description:
-    'Brannkonsult AS utarbeider brannkonsept i Mo i Rana og på Helgeland. Sentralt godkjent TKL 1+2. Fra ca. 15 000 kr inkl. branntegninger. Fastpris alltid.',
+    'Brannkonsept for byggesaker i Mo i Rana og på Helgeland — fra industribygg til borettslag. Sentralt godkjent TKL 1+2, fastpris fra ca. 15 000 kr inkl. branntegninger.',
   alternates: { canonical: 'https://www.ranabrannkonsult.no/brannkonsept' },
   openGraph: {
     title: 'Brannkonsept i Rana | Brannkonsult AS',
     description:
-      'Brannkonsult AS utarbeider brannkonsept i Mo i Rana og på Helgeland. Sentralt godkjent TKL 1+2. Fastpris alltid.',
+      'Brannkonsept for byggesaker i Mo i Rana og på Helgeland. Sentralt godkjent TKL 1+2, alltid fastpris.',
     url: 'https://www.ranabrannkonsult.no/brannkonsept',
   },
 }
 
 const faqItems = [
   {
-    question: 'Hva trenger jeg til mitt prosjekt — brannkonsept eller brannteknisk notat?',
+    question: 'Holder det med et brannteknisk notat, eller trenger jeg et fullt brannkonsept?',
     answer:
-      'Et brannkonsept er en mer helhetlig rapport som beskriver brannsikkerhetsnivået til hele byggverket. Et brannteknisk notat er enklere og brukes for mindre tiltak. Vi veileder deg til riktig løsning for ditt prosjekt — ta kontakt for en gratis vurdering.',
+      'Et brannteknisk notat er tilstrekkelig for mindre, avgrensede tiltak. Skal kommunen vurdere brannsikkerheten for hele byggverket — for eksempel ved bruksendring eller et større tilbygg — kreves som regel et fullt brannkonsept. Send oss en kort beskrivelse, så avklarer vi hva som gjelder for ditt prosjekt.',
   },
   {
-    question: 'Er befaring nødvendig for brannkonsept?',
+    question: 'Må dere befare bygget i Mo i Rana før dere kan starte?',
     answer:
-      'For nybygg og enklere saker er det sjelden nødvendig med befaring. Takket være digitale kartdata og gode tegningsunderlag kan vi i mange tilfeller utarbeide brannkonseptet uten fysisk befaring. Vi gir beskjed dersom vi ser behov for det.',
+      'Sjelden. De fleste brannkonsept lar seg utarbeide fra situasjonsplan, plantegninger og bilder du sender oss. Gjelder det en eldre bygård eller et bygg med uklar branntegningshistorikk, avtaler vi befaring.',
   },
   {
-    question: 'Hva koster et brannkonsept i Rana?',
+    question: 'Hva koster et brannkonsept?',
     answer:
-      'Et brannkonsept i tiltaksklasse 2 starter fra ca. 15 000 kr ekskl. mva., inkludert branntegninger. Vi tilbyr alltid fastpris slik at du slipper ubehagelige overraskelser. Send oss informasjon om prosjektet for et nøyaktig tilbud.',
+      'Fra ca. 15 000 kr ekskl. mva. i tiltaksklasse 2, inkludert branntegninger — alltid til fastpris. Send oss adresse, arealer og en kort prosjektbeskrivelse, så får du et konkret tall innen 24 timer.',
   },
   {
-    question: 'Tilbyr dere håndverkertjenester?',
+    question: 'Selger dere også brannteknisk utstyr eller håndverkertjenester?',
     answer:
-      'Nei — vi er en nøytral rådgiver og selger ingen produkter eller håndverkertjenester. Dette sikrer at rådgivningen vår alltid er uavhengig og i ditt beste interesse.',
+      'Nei. Vi leverer utelukkende rådgivning og dokumentasjon, uten å selge produkter eller utføre selve arbeidet. Det holder anbefalingene våre uavhengige av hva som er mest lønnsomt å selge.',
   },
   {
-    question: 'Hva trengs for å få et pristilbud?',
+    question: 'Jeg har ikke tegninger klare ennå — kan dere hjelpe likevel?',
     answer:
-      'For å gi et nøyaktig tilbud trenger vi: adresse/matrikkel, antall etasjer og bruksareal, tegninger (situasjonsplan og plantegninger) og en kort prosjektbeskrivelse. Send dette til oss så sender vi tilbud innen 24 timer.',
+      'Ja, i en tidlig fase holder det ofte med en skisse og en beskrivelse av tiltaket. Vi sier fra hvis vi trenger mer underlag før vi kan gi et bindende tilbud.',
   },
   {
-    question: 'Tilbyr dere brannkonsept utenfor Mo i Rana?',
+    question: 'Bistår dere også utenfor Mo i Rana sentrum?',
     answer:
-      'Ja. Foruten Mo i Rana tilbyr vi brannkonsept i blant annet Hemnes, Nesna og Rødøy, samt ellers i Nordland.',
+      'Ja — vi tar oppdrag i hele Rana-regionen, på Helgeland (blant annet Hemnes, Nesna og Rødøy) og ellers i Nordland.',
   },
   {
-    question: 'Hvor lang tid tar det å utarbeide et brannkonsept?',
+    question: 'Hvor raskt er et brannkonsept klart?',
     answer:
-      'Leveringstid avhenger av prosjektets omfang og vår arbeidsbelastning. For de fleste prosjekter leverer vi innen 5–10 virkedager etter mottatt bestilling og komplett underlag. Har du tidsfrist, oppgi dette i forespørselen.',
+      'Normalt 5–10 virkedager etter at vi har mottatt bestilling og komplett underlag, avhengig av prosjektets omfang. Har du en søknadsfrist, si fra i forespørselen så prioriterer vi deretter.',
   },
 ]
 
@@ -78,10 +78,10 @@ export default function BrannkonseptPage() {
             <span>Brannkonsept</span>
           </div>
           <h1 className="hero-2 text-brand-white text-4xl lg:text-5xl font-black max-w-2xl">
-            Brannkonsept i Mo i Rana
+            Brannkonsept for byggesaker i Rana
           </h1>
           <p className="hero-3 text-brand-white/70 text-lg mt-4 max-w-xl leading-relaxed">
-            Vi utarbeider helhetlige brannkonsept for byggesaker i Rana og på Helgeland. Fastpris, rask levering og sentral godkjenning.
+            Fra industribygg ved Mo Industripark til garasjer og tilbygg i boligstrøkene — vi setter opp brannkonseptet kommunen krever, til fastpris.
           </p>
           <div className="hero-4 mt-6 max-w-xl">
             <ArcticCircleLine dark />
@@ -97,7 +97,7 @@ export default function BrannkonseptPage() {
             <div className="lg:w-[68%]">
               <ScrollReveal>
                 <p className="text-brand-darkgray text-lg leading-relaxed mb-8">
-                  Et brannkonsept er en skriftlig rapport som oppsummerer bygningens brannsikkerhetsnivå. Ved byggesaker krever kommunen som regel prosjekteringsdokumentasjon på brannkonseptnivå — en helhetlig overordnet plan som ivaretar brannsikkerheten både for det omsøkte tiltaket og den øvrige bygningsmassen. Vi hjelper private, arkitekter, industribedrifter og utbyggere i Rana og omegn med å utarbeide komplette brannkonsept til fast pris.
+                  Et brannkonsept er en skriftlig rapport som dokumenterer bygningens brannsikkerhetsnivå — som regel det kommunen ber om når prosjekteringsdokumentasjonen skal vise at både tiltaket og den øvrige bygningsmassen ivaretas. Vi utarbeider dette for alt fra garasjer og eneboliger til industrihaller og eldre bygårder i Mo i Rana, og bistår private, arkitekter og utbyggere på hele Helgeland.
                 </p>
               </ScrollReveal>
 
@@ -114,19 +114,18 @@ export default function BrannkonseptPage() {
               </ScrollReveal>
 
               <ScrollReveal>
-                <h2 className="text-brand-black text-2xl font-black mb-4">Hva inneholder et brannkonsept?</h2>
+                <h2 className="text-brand-black text-2xl font-black mb-4">Dette dokumenterer vi</h2>
                 <p className="text-brand-darkgray leading-relaxed mb-6">
-                  Et komplett brannkonsept fra Brannkonsult AS inneholder:
+                  Et brannkonsept fra oss dekker alltid:
                 </p>
                 <ul className="space-y-3 mb-8">
                   {[
-                    'Fastsettelse av risikoklasse (RKL) for alle bygningsdeler',
-                    'Fastsettelse av brannklasse (BKL)',
-                    'Oppdeling i brannceller og brannseksjoner',
-                    'Beskrivelse av rømningsveier og røykventilasjon',
-                    'Branntekniske tegninger (plantegninger med brannceller, rømning m.m.)',
-                    'Vurdering av bærende og skille konstruksjoner',
+                    'Fastsettelse av risikoklasse (RKL) og brannklasse (BKL) for bygningen',
+                    'Oppdeling i brannceller og eventuelle brannseksjoner',
+                    'Rømningsveier og røykventilasjon',
+                    'Vurdering av bærende og skillende konstruksjoner',
                     'Krav til branntekniske installasjoner',
+                    'Branntekniske tegninger — plantegninger med brannceller og rømningsveier',
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-3 text-brand-darkgray">
                       <CheckCircle size={18} className="text-brand-orange shrink-0 mt-0.5" />
@@ -137,31 +136,30 @@ export default function BrannkonseptPage() {
               </ScrollReveal>
 
               <ScrollReveal>
-                <h2 className="text-brand-black text-2xl font-black mb-4">Brannklasser og risikoklasser</h2>
+                <h2 className="text-brand-black text-2xl font-black mb-4">Risikoklasse og brannklasse</h2>
                 <p className="text-brand-darkgray leading-relaxed mb-4">
-                  Alle bygninger i Norge klassifiseres etter risikoklasse (RKL 1–6) og brannklasse (BKL 1–4). Risikoklassen bestemmes av hva bygget brukes til og hvilke konsekvenser en brann kan ha. Brannklassen fastsettes ut fra risikoklasse og antall etasjer.
+                  Risikoklassen (RKL 1–6) bestemmes av hva bygget skal brukes til og hvilke konsekvenser en eventuell brann kan få for menneskene i det. Brannklassen (BKL 1–4) fastsettes deretter ut fra risikoklasse og antall etasjer. I Rana ser vi hele spekteret — fra lagerbygg ved industriparken til boligblokker i sentrum.
                 </p>
                 <div className="plate-corner bg-brand-lightgray p-6 mb-8">
-                  <h3 className="font-bold text-brand-black mb-3">Eksempler på risikoklasser:</h3>
+                  <h3 className="font-bold text-brand-black mb-3">Noen eksempler:</h3>
                   <ul className="space-y-2 text-brand-darkgray text-sm">
-                    <li><strong>RKL 1:</strong> Garasjer, lager (ingen personopphold)</li>
-                    <li><strong>RKL 2:</strong> Boliger med evakueringsmulighet fra egen enhet</li>
-                    <li><strong>RKL 4:</strong> Kontorbygg, undervisningsbygg</li>
-                    <li><strong>RKL 5:</strong> Hoteller, sykehjem (sover/overnatting)</li>
-                    <li><strong>RKL 6:</strong> Sykehus (svekkede beboere)</li>
+                    <li><strong>RKL 1:</strong> Garasjer, lagerhaller — ingen fast personopphold</li>
+                    <li><strong>RKL 2:</strong> Boliger med egen rømningsvei fra hver enhet</li>
+                    <li><strong>RKL 4:</strong> Kontor- og undervisningsbygg</li>
+                    <li><strong>RKL 5:</strong> Hoteller og sykehjem, der beboere sover</li>
+                    <li><strong>RKL 6:</strong> Sykehus, der beboere har redusert evne til å evakuere selv</li>
                   </ul>
                 </div>
               </ScrollReveal>
 
               <ScrollReveal>
-                <h2 className="text-brand-black text-2xl font-black mb-4">Hva vi tilbyr</h2>
+                <h2 className="text-brand-black text-2xl font-black mb-4">Slik jobber vi</h2>
                 <ul className="space-y-3 mb-8">
                   {[
-                    'Utarbeidelse av komplett brannkonsept',
-                    'Branntekniske tegninger (brannceller, rømningsveier)',
+                    'Komplett brannkonsept med tilhørende branntegninger',
                     'Ansvarsrett overfor kommunen i tiltaksklasse 1 og 2',
-                    'Fastpris — ingen skjulte kostnader',
-                    'Levering innen 5–10 virkedager',
+                    'Fastpris avtalt før vi starter — ingen tilleggsregninger',
+                    'Levering normalt innen 5–10 virkedager',
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-3 text-brand-darkgray">
                       <CheckCircle size={18} className="text-brand-orange shrink-0 mt-0.5" />
@@ -176,9 +174,9 @@ export default function BrannkonseptPage() {
                   <div className="flex items-start gap-4">
                     <FileText size={32} className="text-brand-orange shrink-0 mt-1" />
                     <div>
-                      <h3 className="font-bold text-brand-black text-lg mb-2">Pris</h3>
+                      <h3 className="font-bold text-brand-black text-lg mb-2">Hva koster det?</h3>
                       <p className="text-brand-darkgray">
-                        Fra ca. <strong className="text-brand-black">15 000 kr</strong> i tiltaksklasse 2, inkl. branntegninger og ekskl. mva. Alltid fastpris.
+                        Fra ca. <strong className="text-brand-black">15 000 kr</strong> ekskl. mva. i tiltaksklasse 2, inkludert branntegninger. Prisen avhenger av byggets størrelse og kompleksitet — du får et konkret tall før du bestemmer deg.
                       </p>
                     </div>
                   </div>
@@ -197,15 +195,15 @@ export default function BrannkonseptPage() {
             <div className="lg:w-[32%]">
               <ScrollReveal delay={200}>
                 <div className="plate-corner border border-brand-gray p-6 bg-brand-dark">
-                  <h3 className="font-bold text-xl mb-3 text-brand-white">Få uforpliktende tilbud</h3>
+                  <h3 className="font-bold text-xl mb-3 text-brand-white">Trenger du brannkonsept?</h3>
                   <p className="text-brand-white/60 text-sm mb-6 leading-relaxed">
-                    Kontakt oss for en gratis vurdering av ditt brannkonseptbehov. Vi svarer innen 24 timer.
+                    Send oss tegningene, så vurderer vi prosjektet kostnadsfritt og svarer innen 24 timer.
                   </p>
                   <Link
                     href="/kontakt-oss"
                     className="block bg-brand-orange text-brand-white font-bold px-6 py-3.5 rounded-[10px] text-center hover:opacity-90 transition-opacity mb-6"
                   >
-                    Kontakt oss
+                    Send prosjektet
                   </Link>
                   <div className="space-y-3 pt-4 border-t border-brand-white/10">
                     <a href="tel:+4740051437" className="flex items-center gap-2 text-brand-white/60 hover:text-brand-orange transition-colors text-sm">
@@ -247,10 +245,10 @@ export default function BrannkonseptPage() {
               <ArcticCircleLine dark />
             </div>
             <h2 className="text-brand-white text-2xl lg:text-3xl font-black mb-6">
-              Kontakt oss for uforpliktende tilbud på brannkonsept i Rana
+              Skal du søke om et byggetiltak i Rana?
             </h2>
             <Link href="/kontakt-oss" className="inline-block bg-brand-orange text-brand-white font-bold px-8 py-3.5 rounded-[10px] hover:opacity-90 transition-opacity">
-              Få tilbud nå
+              Send prosjektet
             </Link>
           </div>
         </section>

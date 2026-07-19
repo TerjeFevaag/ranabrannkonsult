@@ -11,46 +11,46 @@ import { faqJsonLd, breadcrumbJsonLd } from '@/lib/schema'
 export const metadata: Metadata = {
   title: 'Branntilsyn og branninspeksjon i Rana | Brannkonsult AS',
   description:
-    'Branntilsyn og branninspeksjon i Mo i Rana. Fått pålegg fra brannvesenet? Vi inspiserer bygningen og utarbeider tilstandsrapport og handlingsplan. Kontakt oss i dag.',
+    'Har kommunen vært på branntilsyn i Mo i Rana? Vi tilbyr en grundigere branninspeksjon med tilstandsrapport og handlingsplan, for eldre bygg, industribygg og borettslag.',
   alternates: { canonical: 'https://www.ranabrannkonsult.no/branninspeksjon' },
   openGraph: {
     title: 'Branntilsyn og branninspeksjon i Rana | Brannkonsult AS',
     description:
-      'Fått pålegg fra brannvesenet? Vi inspiserer bygningen og utarbeider tilstandsrapport og handlingsplan.',
+      'Grundig branninspeksjon med tilstandsrapport og handlingsplan for bygg i Mo i Rana og på Helgeland.',
     url: 'https://www.ranabrannkonsult.no/branninspeksjon',
   },
 }
 
 const faqItems = [
   {
-    question: 'Hva er forskjellen på branntilsyn og branninspeksjon?',
+    question: 'Er branninspeksjon det samme som branntilsyn?',
     answer:
-      'Branntilsyn er en kontroll utført av kommunens brann- og redningsetat. Branninspeksjon er en frivillig, grundigere gjennomgang du kan bestille fra en privat brannrådgiver som oss. Vi gir en uavhengig vurdering av byggets brannsikkerhet og konkrete anbefalinger.',
+      'Nei. Branntilsyn utføres av kommunens brann- og redningsetat, gjerne som en stikkprøve. Branninspeksjon er noe du bestiller frivillig fra en privat rådgiver som oss, og som går grundigere gjennom bygget med en konkret handlingsplan i etterkant.',
   },
   {
-    question: 'Hvem er ansvarlig for brannsikkerheten i et sameie?',
+    question: 'Vi har fått pålegg fra brannvesenet — kan dere hjelpe?',
     answer:
-      'Styret i sameiet er ansvarlig for at fellesarealene oppfyller brannkravene. Beboere er ansvarlige for sine egne enheter. Vi hjelper sameier og borettslag med å kartlegge status og utarbeide en handlingsplan for nødvendige utbedringer.',
+      'Ja, det er noe av det vi bistår oftest med. Vi går gjennom hva pålegget faktisk krever, og setter opp en tilstandsrapport og handlingsplan som er tilpasset budsjettet, ikke bare det tekniske minimumskravet.',
   },
   {
-    question: 'Hva skjer hvis bygget ikke oppfyller kravene?',
+    question: 'Hvem har ansvaret i et sameie eller borettslag — styret eller beboerne?',
     answer:
-      'Brannvesenet kan gi pålegg om utbedring med frist. Dersom pålegg ikke etterkommes, kan brannvesenet i ytterste konsekvens stenge bygget. Vi hjelper deg med å forstå pålegget og utarbeide en kostnadseffektiv plan for å lukke avvikene.',
+      'Styret svarer for fellesarealene, mens den enkelte beboer har ansvar for egen enhet. Vi hjelper styrer på Helgeland med å kartlegge status i bygget og lage en plan for hva som bør prioriteres.',
   },
   {
     question: 'Hva koster en branninspeksjon?',
     answer:
-      'Kostnaden avhenger av byggets størrelse og kompleksitet. Vi gir et fastpristilbud etter å ha mottatt informasjon om bygget. Ta kontakt for en uforpliktende prat og estimat.',
+      'Det avhenger av byggets størrelse og tilstand. Fortell oss litt om bygget, så gir vi et fastpristilbud før vi setter i gang.',
   },
   {
-    question: 'Tilbyr dere branninspeksjon utenfor Mo i Rana?',
+    question: 'Bistår dere også utenfor Mo i Rana?',
     answer:
-      'Ja. Foruten Mo i Rana tilbyr vi branninspeksjon i blant annet Hemnes, Nesna og Rødøy, samt ellers i Nordland.',
+      'Ja, blant annet i Hemnes, Nesna og Rødøy, og ellers på Helgeland og i Nordland.',
   },
   {
-    question: 'Gjelder oppgraderingskravet for alle eldre bygninger?',
+    question: 'Gjelder oppgraderingskravet uansett hvor gammelt bygget er?',
     answer:
-      'Ja — alle eksisterende bygninger skal oppgraderes til et minimum tilsvarende det som gjaldt for nybygg i 1985 (BF85). For mange eldre bygg og industrianlegg i Rana betyr dette at det er behov for tiltak. Vi hjelper deg med å vurdere hva som er nødvendig.',
+      'Ja — alle eksisterende bygninger skal minst tilfredsstille kravene som gjaldt for nybygg i 1985 (BF85). En del av den eldre industribebyggelsen og de eldste bygårdene i Rana har behov for tiltak for å nå dette nivået. Vi vurderer hva som konkret gjelder for ditt bygg.',
   },
 ]
 
@@ -72,10 +72,10 @@ export default function BranninspeksjonPage() {
             <span>Branninspeksjon</span>
           </div>
           <h1 className="hero-2 text-brand-white text-4xl lg:text-5xl font-black max-w-2xl">
-            Branntilsyn og branninspeksjon i Mo i Rana
+            Etter branntilsynet — branninspeksjon i Mo i Rana
           </h1>
           <p className="hero-3 text-brand-white/70 text-lg mt-4 max-w-xl leading-relaxed">
-            Fått pålegg etter branntilsyn, eller ønsker du en grundig gjennomgang av byggets brannsikkerhet?
+            Fått pålegg fra brannvesenet, eller vil du vite tilstanden før noen andre finner ut av det?
           </p>
           <div className="hero-4 mt-6 max-w-xl">
             <ArcticCircleLine dark />
@@ -89,7 +89,7 @@ export default function BranninspeksjonPage() {
             <div className="lg:w-[68%]">
               <ScrollReveal>
                 <p className="text-brand-darkgray text-lg leading-relaxed mb-8">
-                  Har kommunen vært på branntilsyn, eller ønsker du å kartlegge brannsikkerheten i en eldre bygning i Mo i Rana? Vi hjelper borettslag, sameier, næringsbygg, industribedrifter og eiendomseiere med branninspeksjon og vurdering av byggets brannsikkerhet.
+                  Kommunens branntilsyn er stikkprøvebasert og dekker sjelden hele bygget. Vi tilbyr en grundigere gjennomgang for borettslag, sameier, industribygg og næringseiendommer i Mo i Rana — enten det er en eldre bygård i sentrum eller en produksjonshall ved industriparken.
                 </p>
               </ScrollReveal>
 
@@ -104,27 +104,27 @@ export default function BranninspeksjonPage() {
                   />
                 </div>
 
-                <h2 className="text-brand-black text-2xl font-black mb-4">Krav til oppgradering</h2>
+                <h2 className="text-brand-black text-2xl font-black mb-4">Hvorfor eldre bygg i Rana ofte trenger tiltak</h2>
                 <p className="text-brand-darkgray leading-relaxed mb-8">
-                  Alle bygninger i Norge skal tilfredsstille et minimum brannsikkerhetsnivå tilsvarende det som gjaldt for nybygg i 1985 (BF85). Eldre bygg som ikke oppfyller dette kravet skal utbedres. Rana har en variert bygningsmasse med eldre industribebyggelse og trehus som kan ha behov for branntekniske tiltak.
+                  Regelverket krever at alle bygninger minst holder samme brannsikkerhetsnivå som gjaldt for nybygg i 1985 (BF85). Rana har en god del bygningsmasse eldre enn dette — industribebyggelse fra oppbyggingen av Mo Industripark og trehusbebyggelse i sentrum — der det ofte gjenstår tiltak for å nå kravet.
                 </p>
               </ScrollReveal>
 
               <ScrollReveal>
-                <h2 className="text-brand-black text-2xl font-black mb-4">Brann- og redningsetatens oppgave</h2>
+                <h2 className="text-brand-black text-2xl font-black mb-4">Stikkprøve fra kommunen, helhet fra oss</h2>
                 <p className="text-brand-darkgray leading-relaxed mb-8">
-                  Kommunens branntilsyn gjennomfører som regel stikkprøvekontroller — ikke en full gjennomgang av hele bygget. Det betyr at et bygg kan ha branntekniske mangler selv om det nylig har vært til tilsyn uten anmerkninger. En grundig branninspeksjon fra en uavhengig rådgiver gir deg et mer komplett bilde.
+                  Brann- og redningsetatens tilsyn er som regel en stikkprøve, ikke en full gjennomgang. Et bygg kan derfor ha reelle mangler selv rett etter et tilsyn uten anmerkninger. Vår branninspeksjon går gjennom hele bygget, ikke bare utvalgte punkter.
                 </p>
               </ScrollReveal>
 
               <ScrollReveal>
-                <h2 className="text-brand-black text-2xl font-black mb-4">Hva inngår i vår branninspeksjon?</h2>
+                <h2 className="text-brand-black text-2xl font-black mb-4">Slik jobber vi</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
                   {[
-                    { title: 'Inspeksjon', desc: 'Grundig gjennomgang av hele bygningen — fellesarealer, rømningsveier, tekniske installasjoner og konstruksjoner.' },
-                    { title: 'Tilstandsrapport', desc: 'Skriftlig rapport med oversikt over avvik og mangler, rangert etter alvorlighetsgrad.' },
-                    { title: 'Handlingsplan', desc: 'Konkrete anbefalinger for utbedring, med kostnadsestimat og prioritering av tiltak.' },
-                    { title: 'Internkontrollrutiner', desc: 'Hjelp til å etablere gode rutiner for løpende brannforebygging og dokumentasjon.' },
+                    { title: 'Befaring', desc: 'Gjennomgang av fellesarealer, rømningsveier, tekniske installasjoner og konstruksjoner.' },
+                    { title: 'Tilstandsrapport', desc: 'Skriftlig oversikt over avvik, rangert etter hvor alvorlige de er.' },
+                    { title: 'Handlingsplan', desc: 'Konkrete tiltak med kostnadsestimat, prioritert i riktig rekkefølge.' },
+                    { title: 'Rutiner videre', desc: 'Forslag til internkontroll, slik at brannsikkerheten følges opp løpende — ikke bare denne ene gangen.' },
                   ].map((item, i) => (
                     <div key={i} className="plate-corner bg-brand-lightgray p-5">
                       <h3 className="font-bold text-brand-black mb-2">{item.title}</h3>
@@ -135,9 +135,9 @@ export default function BranninspeksjonPage() {
               </ScrollReveal>
 
               <ScrollReveal>
-                <h2 className="text-brand-black text-2xl font-black mb-4">Eier er ansvarlig — brannrådgiver hjelper deg</h2>
+                <h2 className="text-brand-black text-2xl font-black mb-4">Ansvaret er ditt — arbeidet kan være vårt</h2>
                 <p className="text-brand-darkgray leading-relaxed mb-8">
-                  Det er alltid eier eller styret som er juridisk ansvarlig for brannsikkerheten i bygget. Vi er en rådgivende part som gir deg oversikt, prioritering og et klart bilde av hva som må gjøres — slik at du kan ta gode beslutninger og unngå unødvendige kostnader.
+                  Eier eller styret sitter alltid med det juridiske ansvaret for brannsikkerheten. Vår jobb er å gi deg oversikten og prioriteringen som gjør det mulig å ta riktige beslutninger — uten å bruke penger på tiltak som ikke er nødvendige.
                 </p>
               </ScrollReveal>
 
@@ -146,7 +146,7 @@ export default function BranninspeksjonPage() {
                   <div className="flex items-start gap-3">
                     <AlertTriangle size={20} className="text-brand-orange shrink-0 mt-0.5" />
                     <div>
-                      <h3 className="font-bold text-brand-black mb-2">Typisk ordlyd fra brannvesenet ved pålegg</h3>
+                      <h3 className="font-bold text-brand-black mb-2">Typisk ordlyd i et pålegg fra brannvesenet</h3>
                       <p className="text-brand-darkgray text-sm italic leading-relaxed">
                         «Det er avdekket mangler ved brannsikkerheten i bygget. Eier pålegges å utbedre disse innen [dato]. Dokumentasjon på gjennomførte tiltak skal oversendes brannvesenet.»
                       </p>
@@ -154,7 +154,7 @@ export default function BranninspeksjonPage() {
                   </div>
                 </div>
                 <p className="text-brand-darkgray leading-relaxed mb-10">
-                  Dersom du har mottatt et slikt pålegg, er det viktig å handle raskt. Vi hjelper deg med å forstå hva som kreves og utarbeider nødvendig dokumentasjon.
+                  Har du fått noe som ligner? Vent ikke — fristene er reelle. Vi hjelper deg med å tolke pålegget og få frem dokumentasjonen brannvesenet ber om.
                 </p>
               </ScrollReveal>
 
@@ -169,12 +169,12 @@ export default function BranninspeksjonPage() {
             <div className="lg:w-[32%]">
               <ScrollReveal delay={200}>
                 <div className="plate-corner border border-brand-gray p-6 bg-brand-dark">
-                  <h3 className="font-bold text-xl mb-3 text-brand-white">Fått pålegg?</h3>
+                  <h3 className="font-bold text-xl mb-3 text-brand-white">Fått pålegg fra brannvesenet?</h3>
                   <p className="text-brand-white/60 text-sm mb-6 leading-relaxed">
-                    Ta kontakt så hjelper vi deg med tilstandsrapport og handlingsplan for å imøtekomme kravene.
+                    Send oss pålegget, så hjelper vi deg med tilstandsrapport og handlingsplan.
                   </p>
                   <Link href="/kontakt-oss" className="block bg-brand-orange text-brand-white font-bold px-6 py-3.5 rounded-[10px] text-center hover:opacity-90 transition-opacity mb-6">
-                    Kontakt oss
+                    Ta kontakt
                   </Link>
                   <div className="space-y-3 pt-4 border-t border-brand-white/10">
                     <a href="tel:+4740051437" className="flex items-center gap-2 text-brand-white/60 hover:text-brand-orange transition-colors text-sm">
@@ -212,10 +212,10 @@ export default function BranninspeksjonPage() {
               <ArcticCircleLine dark />
             </div>
             <h2 className="text-brand-white text-2xl lg:text-3xl font-black mb-6">
-              Kontakt oss for hjelp etter branntilsyn i Rana
+              Usikker på tilstanden i bygget ditt?
             </h2>
             <Link href="/kontakt-oss" className="inline-block bg-brand-orange text-brand-white font-bold px-8 py-3.5 rounded-[10px] hover:opacity-90 transition-opacity">
-              Kontakt oss
+              Ta kontakt
             </Link>
           </div>
         </section>
