@@ -35,7 +35,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: 'Ugyldig forespørsel.' }, { status: 400 })
   }
 
-  const { navn, epost, telefon, prosjekttype, melding } = body as Record<string, unknown>
+  const { navn, epost, telefon, prosjekttype, melding, vedlegg } = body as Record<string, unknown>
 
   const errors: string[] = []
 
@@ -58,6 +58,46 @@ export async function POST(request: Request) {
   if (!trimmedMelding) errors.push('Melding er påkrevd.')
   if (trimmedMelding.length > 5000) errors.push('Meldingen er for lang.')
 
+  type Attachment = { name: string; url: string; size: number }
+  const attachments: Attachment[] = []
+  if (vedlegg !== undefined) {
+    if (!Array.isArray(vedlegg)) {
+      errors.push('Ugyldig vedleggsformat.')
+    } else if (vedlegg.length > 4) {
+      errors.push('Maks 4 vedlegg er tillatt.')
+    } else {
+      for (const item of vedlegg) {
+        if (
+          typeof item !== 'object' ||
+          item === null ||
+          typeof (item as Record<string, unknown>).name !== 'string' ||
+          typeof (item as Record<string, unknown>).url !== 'string' ||
+          typeof (item as Record<string, unknown>).size !== 'number'
+        ) {
+          errors.push('Ugyldig vedlegg.')
+          break
+        }
+        const { name, url, size } = item as { name: string; url: string; size: number }
+        let parsedUrl: URL
+        try {
+          parsedUrl = new URL(url)
+        } catch {
+          errors.push('Ugyldig vedleggs-URL.')
+          break
+        }
+        if (parsedUrl.protocol !== 'https:') {
+          errors.push('Ugyldig vedleggs-URL.')
+          break
+        }
+        if (size > 20 * 1024 * 1024) {
+          errors.push('Et vedlegg overskrider 20 MB.')
+          break
+        }
+        attachments.push({ name: name.slice(0, 200), url, size })
+      }
+    }
+  }
+
   if (errors.length > 0) {
     return NextResponse.json({ error: errors[0] }, { status: 400 })
   }
@@ -73,6 +113,10 @@ export async function POST(request: Request) {
 
   const prosjekttypeLabel = trimmedProsjekttype ? PROSJEKTTYPE_LABELS[trimmedProsjekttype] : 'Ikke oppgitt'
 
+  function formatSize(bytes: number) {
+    return `${(bytes / (1024 * 1024)).toFixed(1)} MB`
+  }
+
   const textBody = [
     `Ny henvendelse fra kontaktskjemaet på ranabrannkonsult.no`,
     ``,
@@ -83,6 +127,9 @@ export async function POST(request: Request) {
     ``,
     `Melding:`,
     trimmedMelding,
+    ...(attachments.length > 0
+      ? ['', `Vedlegg (${attachments.length}):`, ...attachments.map((a) => `- ${a.name} (${formatSize(a.size)}): ${a.url}`)]
+      : []),
   ].join('\n')
 
   const htmlBody = `
@@ -93,6 +140,16 @@ export async function POST(request: Request) {
     <p><strong>Prosjekttype:</strong> ${escapeHtml(prosjekttypeLabel)}</p>
     <p><strong>Melding:</strong></p>
     <p>${escapeHtml(trimmedMelding).replace(/\n/g, '<br />')}</p>
+    ${
+      attachments.length > 0
+        ? `<p><strong>Vedlegg (${attachments.length}):</strong></p>
+    <ul>
+      ${attachments
+        .map((a) => `<li><a href="${escapeHtml(a.url)}">${escapeHtml(a.name)}</a> (${formatSize(a.size)})</li>`)
+        .join('\n      ')}
+    </ul>`
+        : ''
+    }
   `
 
   try {
