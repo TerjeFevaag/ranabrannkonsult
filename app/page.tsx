@@ -64,8 +64,8 @@ const reviews = [
     rating: 5,
   },
   {
-    quote: 'Veldig fornøyd! God kommunikasjon og raskt og grundig utført.',
-    author: 'Ole Magnus Øverland',
+    quote: 'Veldig rask respons, høy faglig kompetanse og høy grad av løsningsorientering. Får mine beste anbefalinger!',
+    author: 'Nabila Sabab',
     rating: 5,
   },
   {
