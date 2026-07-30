@@ -59,13 +59,13 @@ const stats = [
 const reviews = [
   {
     quote: 'Raskt og effektivt. Svarer opp på oppfølgingsspørsmål.',
-    author: 'Kristina Nordås',
-    company: 'Byggtek Nord AS',
+    author: 'Jan Erik Barli',
+    company: 'Moelv Invest AS',
     rating: 5,
   },
   {
     quote: 'Veldig rask respons, høy faglig kompetanse og høy grad av løsningsorientering. Får mine beste anbefalinger!',
-    author: 'Nabila Sabab',
+    author: 'Therese Johannesen',
     rating: 5,
   },
   {
