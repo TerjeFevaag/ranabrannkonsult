@@ -58,21 +58,19 @@ const stats = [
 
 const reviews = [
   {
-    quote:
-      'Lett å få kontakt med firmaet på ulike spørsmål som dukker opp underveis. Jeg har kun hatt gode opplevelser, selv om ikke alt var helt klart for meg som ufaglært.',
-    author: 'Kirsti Andresen',
-    rating: 4,
-  },
-  {
-    quote:
-      'På spørsmål om brannkonsept, og ansvarsrett for fagområdet, fikk vi raskt og proffesjonelt svar. Hyggelig, ryddig og konstruktiv oppfølging.',
-    author: 'Sivilarkitekt Sverre Krefting',
+    quote: 'Raskt og effektivt. Svarer opp på oppfølgingsspørsmål.',
+    author: 'Kristina Nordås',
+    company: 'Byggtek Nord AS',
     rating: 5,
   },
   {
-    quote:
-      'Raskt svar, relevant og grundig rapport, kommunen likte måten det var gjort på. Måtte endre noe i rapporten pga ny planløsning. Ny oppdatert rapport innen kort tid. Alt til bra priser.',
-    author: 'Vegard Hals',
+    quote: 'Veldig fornøyd! God kommunikasjon og raskt og grundig utført.',
+    author: 'Ole Magnus Øverland',
+    rating: 5,
+  },
+  {
+    quote: 'Fikk utført oppdraget profesjonelt og til riktig tid.',
+    author: 'Morten Brennum',
     rating: 5,
   },
   {
